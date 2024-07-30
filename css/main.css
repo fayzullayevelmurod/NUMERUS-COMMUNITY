@@ -236,11 +236,6 @@ nav {
   justify-content: space-between;
 }
 
-.page-two .intro {
-  background: linear-gradient(180deg, rgba(7, 11, 20, 0.6) 0%, rgba(7, 11, 19, 0.581574) 8.08%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(7, 11, 20, 0) 0.17%, rgba(7, 11, 20, 0) 71.27%, rgba(7, 11, 20, 0.38) 85.65%, rgba(7, 11, 20, 0.81) 100%), linear-gradient(360deg, rgba(7, 11, 20, 0) 0.17%, rgba(7, 11, 20, 0) 71.27%, rgba(7, 11, 20, 0.38) 85.65%, rgba(7, 11, 20, 0.81) 100%), url(../../images/intro-bg.gif) no-repeat;
-  border-radius: 0px 0px 100px 100px;
-}
-
 .intro {
   background: url(../../images/intro-bg.png) no-repeat;
   background-size: 100% 100%;
@@ -309,7 +304,7 @@ nav {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  left: -1px;
   background: linear-gradient(269.98deg, rgba(0, 27, 74, 0) 54.89%, #011133 98.09%);
   width: 100%;
   height: 100%;
@@ -659,6 +654,10 @@ nav {
   color: #9e9e9e;
 }
 
+.page-two .intro {
+  background: linear-gradient(180deg, rgba(7, 11, 20, 0.6) 0%, rgba(7, 11, 19, 0.581574) 8.08%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(7, 11, 20, 0) 0.17%, rgba(7, 11, 20, 0) 71.27%, rgba(7, 11, 20, 0.38) 85.65%, rgba(7, 11, 20, 0.81) 100%), linear-gradient(360deg, rgba(7, 11, 20, 0) 0.17%, rgba(7, 11, 20, 0) 71.27%, rgba(7, 11, 20, 0.38) 85.65%, rgba(7, 11, 20, 0.81) 100%), url(../../images/intro-bg.gif) no-repeat;
+  border-radius: 0px 0px 100px 100px;
+}
 .page-two .ranking-card .ratings {
   grid-template-columns: auto auto auto auto;
 }
@@ -678,8 +677,13 @@ nav {
   order: -1;
 }
 
-.md-show {
-  display: none;
+.page-three .intro {
+  background: linear-gradient(180deg, rgba(7, 11, 20, 0.6) 0%, rgba(7, 11, 19, 0.581574) 8.08%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(7, 11, 20, 0) 0.17%, rgba(7, 11, 20, 0) 71.27%, rgba(7, 11, 20, 0.38) 85.65%, rgba(7, 11, 20, 0.81) 100%), linear-gradient(360deg, rgba(7, 11, 20, 0) 0.17%, rgba(7, 11, 20, 0) 71.27%, rgba(7, 11, 20, 0.38) 85.65%, rgba(7, 11, 20, 0.81) 100%), url(../../images/game-art-bg-3.gif);
+}
+
+.md-show,
+.lg-block {
+  display: none !important;
 }
 
 @media screen and (max-width: 1350px) {
@@ -788,6 +792,10 @@ nav {
     background-size: cover;
     background-position: center;
   }
+  .page-two .rankings-section .day-box {
+    margin-left: 20px;
+    margin-top: 0;
+  }
   .page-two .ranking-card .ratings {
     grid-template-columns: auto auto;
   }
@@ -800,15 +808,16 @@ nav {
     max-width: 100%;
     justify-content: space-between;
     margin-top: 21px;
+    width: 100% !important;
   }
-  .page-two .info-box {
+  .page-two .ranking-card .info-box {
     max-width: 100%;
   }
   .rankings-section .rihgt-img__box::before {
     background: linear-gradient(360deg, #011133 6.29%, rgba(3, 20, 45, 0) 24.57%);
   }
   .lg-block {
-    display: flex;
+    display: flex !important;
   }
   .lg-hide {
     display: none !important;
@@ -963,6 +972,9 @@ nav {
   }
   .tabs .tab-item {
     width: 202px;
+  }
+  .rankings-section .day-box__flex {
+    gap: 12px;
   }
 }
 @media screen and (max-width: 480px) {

@@ -1,11 +1,35 @@
 .page-two {
+  .intro {
+    background: linear-gradient(
+        180deg,
+        rgba(7, 11, 20, 0.6) 0%,
+        rgba(7, 11, 19, 0.581574) 8.08%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(7, 11, 20, 0) 0.17%,
+        rgba(7, 11, 20, 0) 71.27%,
+        rgba(7, 11, 20, 0.38) 85.65%,
+        rgba(7, 11, 20, 0.81) 100%
+      ),
+      linear-gradient(
+        360deg,
+        rgba(7, 11, 20, 0) 0.17%,
+        rgba(7, 11, 20, 0) 71.27%,
+        rgba(7, 11, 20, 0.38) 85.65%,
+        rgba(7, 11, 20, 0.81) 100%
+      ),
+      url(../../images/intro-bg.gif) no-repeat;
+    border-radius: 0px 0px 100px 100px;
+  }
   .ranking-card .ratings {
     grid-template-columns: auto auto auto auto;
   }
   .ranking-card .info-box {
     max-width: 654px;
   }
-  .ratings{
+  .ratings {
     .rating-box {
       &:nth-child(1) {
         order: -3;
@@ -20,5 +44,32 @@
         order: -1;
       }
     }
+  }
+}
+
+// page-three
+.page-three {
+  .intro {
+    background: linear-gradient(
+        180deg,
+        rgba(7, 11, 20, 0.6) 0%,
+        rgba(7, 11, 19, 0.581574) 8.08%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(7, 11, 20, 0) 0.17%,
+        rgba(7, 11, 20, 0) 71.27%,
+        rgba(7, 11, 20, 0.38) 85.65%,
+        rgba(7, 11, 20, 0.81) 100%
+      ),
+      linear-gradient(
+        360deg,
+        rgba(7, 11, 20, 0) 0.17%,
+        rgba(7, 11, 20, 0) 71.27%,
+        rgba(7, 11, 20, 0.38) 85.65%,
+        rgba(7, 11, 20, 0.81) 100%
+      ),
+      url(../../images/game-art-bg-3.gif);
   }
 }

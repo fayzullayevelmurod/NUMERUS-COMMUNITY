@@ -1,5 +1,6 @@
-.md-show {
-  display: none;
+.md-show,
+.lg-block {
+  display: none !important;
 }
 @media screen and (max-width: 1350px) {
   .rankings-section .rihgt-img__box {
@@ -146,6 +147,10 @@
     background-position: center;
   }
   .page-two {
+    .rankings-section .day-box {
+      margin-left: 20px;
+      margin-top: 0;
+    }
     .ranking-card .ratings {
       grid-template-columns: auto auto;
     }
@@ -158,8 +163,9 @@
       max-width: 100%;
       justify-content: space-between;
       margin-top: 21px;
+      width: 100% !important;
     }
-    .info-box{
+    .ranking-card .info-box {
       max-width: 100%;
     }
   }
@@ -171,7 +177,7 @@
     );
   }
   .lg-block {
-    display: flex;
+    display: flex !important;
   }
   .lg-hide {
     display: none !important;
@@ -348,6 +354,9 @@
   }
   .tabs .tab-item {
     width: 202px;
+  }
+  .rankings-section .day-box__flex{
+    gap: 12px;
   }
 }
 
