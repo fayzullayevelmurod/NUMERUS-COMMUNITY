@@ -368,7 +368,7 @@
     height: 175px;
   }
   .intro {
-    background: url(../images/media-intro-bg.png) no-repeat;
-    background-size: cover;
+    background: url(../images/media-intro-bg.png) no-repeat !important;
+    background-size: cover !important;
   }
 }
