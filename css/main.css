@@ -665,6 +665,18 @@ nav {
 .page-two .ranking-card .info-box {
   max-width: 654px;
 }
+.page-two .ratings .rating-box:nth-child(1) {
+  order: -3;
+}
+.page-two .ratings .rating-box:nth-child(2) {
+  order: -2;
+}
+.page-two .ratings .rating-box:nth-child(5) {
+  order: -1;
+}
+.page-two .ratings .rating-box:nth-child(6) {
+  order: -1;
+}
 
 .md-show {
   display: none;
@@ -775,6 +787,34 @@ nav {
   .intro {
     background-size: cover;
     background-position: center;
+  }
+  .page-two .ranking-card .ratings {
+    grid-template-columns: auto auto;
+  }
+  .page-two .ratings > .rating-box {
+    order: unset !important;
+  }
+  .page-two .rankings-section .social-media {
+    position: initial;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: space-between;
+    margin-top: 21px;
+  }
+  .page-two .info-box {
+    max-width: 100%;
+  }
+  .rankings-section .rihgt-img__box::before {
+    background: linear-gradient(360deg, #011133 6.29%, rgba(3, 20, 45, 0) 24.57%);
+  }
+  .lg-block {
+    display: flex;
+  }
+  .lg-hide {
+    display: none !important;
+  }
+  .social-media .lg-hide {
+    display: none !important;
   }
 }
 @media screen and (max-width: 768px) {

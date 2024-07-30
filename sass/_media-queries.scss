@@ -145,6 +145,40 @@
     background-size: cover;
     background-position: center;
   }
+  .page-two {
+    .ranking-card .ratings {
+      grid-template-columns: auto auto;
+    }
+    .ratings > .rating-box {
+      order: unset !important;
+    }
+    .rankings-section .social-media {
+      position: initial;
+      flex-direction: row;
+      max-width: 100%;
+      justify-content: space-between;
+      margin-top: 21px;
+    }
+    .info-box{
+      max-width: 100%;
+    }
+  }
+  .rankings-section .rihgt-img__box::before {
+    background: linear-gradient(
+      360deg,
+      #011133 6.29%,
+      rgba(3, 20, 45, 0) 24.57%
+    );
+  }
+  .lg-block {
+    display: flex;
+  }
+  .lg-hide {
+    display: none !important;
+  }
+  .social-media .lg-hide {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -312,7 +346,7 @@
       }
     }
   }
-  .tabs .tab-item{
+  .tabs .tab-item {
     width: 202px;
   }
 }
