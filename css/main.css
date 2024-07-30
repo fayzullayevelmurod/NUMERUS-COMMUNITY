@@ -74,6 +74,12 @@ a:focus {
   gap: 6px;
   cursor: pointer;
 }
+.language-box .selected-lang .arrow-down {
+  transition: all 0.1s linear;
+}
+.language-box .selected-lang.active .arrow-down {
+  transform: rotate(90deg);
+}
 .language-box .lang-name {
   font-size: 14px;
   font-weight: 700;
@@ -86,6 +92,11 @@ a:focus {
   left: 0;
   width: 100%;
   display: none;
+  user-select: none;
+  cursor: pointer;
+}
+.language-box .option-language.show {
+  display: block;
 }
 
 .tabs {
@@ -152,6 +163,7 @@ body {
 .primary-btn:hover, .primary-btn.active {
   border-color: #0494fd;
   background: url(../../images/btn-bg.png) no-repeat, rgba(0, 27, 74, 0.8);
+  color: #fff;
 }
 
 .button-group {
@@ -602,6 +614,7 @@ nav {
 .footer-navigation .btn,
 .footer-navigation .frozen-btn {
   height: unset;
+  color: #9E9E9E;
 }
 
 .md-show {
@@ -626,6 +639,7 @@ nav {
   .intro .tabs {
     overflow-x: auto;
     margin-right: -16px;
+    margin-left: -16px;
     gap: 30px;
   }
   .intro .tabs::-webkit-scrollbar {
@@ -730,7 +744,7 @@ nav {
     padding-right: 10px;
   }
   .intro .tabs {
-    padding: 0 85px;
+    padding: 0 69px;
   }
   .intro .right-box {
     width: 100%;
@@ -822,6 +836,7 @@ nav {
     height: 40px;
     flex: 1 1 auto;
     font-size: 14px;
+    gap: 8px;
   }
   .md-hide {
     display: none;
@@ -864,6 +879,10 @@ nav {
 @media screen and (max-width: 480px) {
   .rankings-section .rihgt-img__box img {
     height: 175px;
+  }
+  .intro {
+    background: url(../images/media-intro-bg.png) no-repeat;
+    background-size: cover;
   }
 }
 

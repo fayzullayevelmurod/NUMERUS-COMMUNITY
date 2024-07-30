@@ -20,6 +20,7 @@
     .tabs {
       overflow-x: auto;
       margin-right: -16px;
+      margin-left: -16px;
       gap: 30px;
       &::-webkit-scrollbar {
         display: none;
@@ -163,7 +164,7 @@
     }
 
     .tabs {
-      padding: 0 85px;
+      padding: 0 69px;
     }
   }
   .intro .right-box {
@@ -267,6 +268,8 @@
       height: 40px;
       flex: 1 1 auto;
       font-size: 14px;
+      gap: 8px;
+      // color: ;
     }
   }
   .md-hide {
@@ -317,5 +320,9 @@
 @media screen and (max-width: 480px) {
   .rankings-section .rihgt-img__box img {
     height: 175px;
+  }
+  .intro {
+    background: url(../images/media-intro-bg.png) no-repeat;
+    background-size: cover;
   }
 }
