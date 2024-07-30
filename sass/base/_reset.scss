@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 /* Core style */
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 a,
@@ -17,34 +18,80 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0;
-	text-decoration: none;
-	line-height: 1.2;
+  margin: 0;
+  text-decoration: none;
+  line-height: 1.2;
 }
-
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
 textarea:focus,
 select:focus {
-	outline: none !important;
-	-webkit-appearance: none;
-	box-shadow: none !important;
+  outline: none !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
 }
 
 button {
-	border: none;
-	background: none;
+  border: none;
+  background: none;
 }
 
 input:focus {
-	outline: none !important;
+  outline: none !important;
 }
 
 a:active,
 a:focus {
-	outline: 0;
-	border: none;
-	-moz-outline-style: none;
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
 }
 
 .wrapper {
-	overflow: hidden;
+  overflow: hidden;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// language box
+.language-box {
+  position: relative;
+
+  .selected-lang {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+  }
+  .lang-name {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.94px;
+    color: #fff;
+  }
+  .option-language {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+  }
+}
+
+// tabs
+
+.tabs {
+  display: flex;
+  gap: 67px;
+  .tab-item {
+    width: 249px;
+  }
 }

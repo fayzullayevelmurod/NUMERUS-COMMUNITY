@@ -1,0 +1,21 @@
+.footer {
+  background: #000815;
+  padding: 14px 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17.07px;
+      color: #0158e0;
+    }
+  }
+  .social-media {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+}
