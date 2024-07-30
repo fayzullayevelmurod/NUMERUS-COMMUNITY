@@ -681,6 +681,10 @@ nav {
   background: linear-gradient(180deg, rgba(7, 11, 20, 0.6) 0%, rgba(7, 11, 19, 0.581574) 8.08%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(7, 11, 20, 0) 0.17%, rgba(7, 11, 20, 0) 71.27%, rgba(7, 11, 20, 0.38) 85.65%, rgba(7, 11, 20, 0.81) 100%), linear-gradient(360deg, rgba(7, 11, 20, 0) 0.17%, rgba(7, 11, 20, 0) 71.27%, rgba(7, 11, 20, 0.38) 85.65%, rgba(7, 11, 20, 0.81) 100%), url(../../images/game-art-bg-3.gif);
 }
 
+.page-four .intro {
+  background: linear-gradient(180deg, rgba(7, 11, 20, 0.6) 0%, rgba(7, 11, 19, 0.581574) 8.08%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(7, 11, 20, 0) 0.17%, rgba(7, 11, 20, 0) 71.27%, rgba(7, 11, 20, 0.38) 85.65%, rgba(7, 11, 20, 0.81) 100%), linear-gradient(360deg, rgba(7, 11, 20, 0) 0.17%, rgba(7, 11, 20, 0) 71.27%, rgba(7, 11, 20, 0.38) 85.65%, rgba(7, 11, 20, 0.81) 100%), url(../../images/game-art-bg-4.png) no-repeat;
+}
+
 .md-show,
 .lg-block {
   display: none !important;
