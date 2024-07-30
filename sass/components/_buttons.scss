@@ -54,11 +54,21 @@
   border: 3px solid transparent;
   transition: all 0.2s linear;
 
-  &:hover,
   &.active {
-    border-color: #0494fd;
-    background: url(../../images/btn-bg.png) no-repeat, #001b4acc;
+    border-color: #0494fd !important;
+    background: url(../../images/btn-bg.png) no-repeat, #001b4acc !important;
+    color: #fff !important;
+  }
+  &:hover {
+    border-color: #4ab9de;
     color: #fff;
+    background: linear-gradient(0deg, #002367, #002367),
+      radial-gradient(
+        96.34% 67.76% at 50% 100.73%,
+        rgba(0, 194, 255, 0.3) 31.5%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    box-shadow: 0px 0px 8px 0px #0454a6 inset;
   }
 }
 
