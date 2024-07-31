@@ -185,8 +185,98 @@
   .social-media .lg-hide {
     display: none !important;
   }
-  .intro{
+  .intro {
     border-radius: 0 0 32px 32px !important;
+  }
+  .server-information .game-world .container {
+    flex-direction: column;
+  }
+  .server-information .game-world .left-box {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .server-information {
+    .project-description {
+      order: -1;
+    }
+  }
+  .server-information .project-description .scroll-box {
+    padding-right: 10px;
+  }
+  .server-information {
+    .game-world {
+      .left-box > .game-world__label {
+        display: none;
+      }
+      .bonus-box {
+        display: none;
+      }
+    }
+  }
+  .server-information .reviews-box .user-name__box .left-box {
+    display: flex;
+    flex-direction: row !important;
+  }
+  .server-information .reviews-box .comment-box .box {
+    align-items: start;
+    & > img {
+      margin-top: 18px;
+    }
+  }
+  .server-information .reviews-box .comments-parent {
+    gap: 22px;
+  }
+  .server-information .bonus-box.md-block {
+    display: flex;
+
+    & > .bonus-card {
+      display: none;
+    }
+  }
+  .server-information .bonus-cards {
+    display: flex;
+  }
+  .server-information .ranking-card {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .server-information .ranking-card .ratings {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .server-information {
+    .rankings-section .social-media {
+      bottom: 139px !important;
+    }
+  }
+  .server-information .ranking-card .info-box {
+    gap: 12px;
+  }
+  .server-information .ranking-card .desc {
+    margin-bottom: 0;
+  }
+  .server-information .diamond-img {
+    display: none;
+  }
+  .server-information .user-name {
+    span {
+      display: none;
+    }
+  }
+  .server-information .reviews-box .recommendation span {
+    margin-top: 0;
+  }
+  .server-information .reviews-box .user-name__box {
+    margin-bottom: 12px;
+  }
+  .server-information .reviews-box .recommendation img {
+    margin-top: -4px;
+  }
+  .server-information .reviews-box .comments-parent {
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
 
@@ -358,8 +448,55 @@
   .tabs .tab-item {
     width: 202px;
   }
-  .rankings-section .day-box__flex{
+  .rankings-section .day-box__flex {
     gap: 12px;
+  }
+  .server-information .project-description .description-box {
+    height: 388px;
+    padding: 16px 10px 20px 12px;
+  }
+  .server-information .reviews-box .btns {
+    button:nth-child(2) {
+      span {
+        display: none;
+      }
+    }
+  }
+  .server-information .achievements {
+    justify-content: space-between;
+  }
+  .server-information .game-world .container {
+    gap: 35px;
+  }
+  .server-information .achievements .star-box {
+    img {
+      width: 10px;
+      height: 10px;
+      margin-left: -5px;
+    }
+  }
+  .server-information .achievements .box {
+    width: 50px;
+    height: 50px;
+    padding: 9px;
+    img {
+      width: 100%;
+    }
+  }
+  .server-information .achievements .box:last-child {
+    display: none;
+  }
+  .server-information {
+    .seo {
+      padding-top: 28px;
+    }
+  }
+  .seo {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .footer{
+    background: transparent;
   }
 }
 

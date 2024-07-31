@@ -4,6 +4,20 @@ html {
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #003687;
+  border-radius: 2.99px;
+}
+
+::-webkit-scrollbar-track {
+  background: #092250;
+  border-radius: 2.99px;
+}
+
 *,
 *::before,
 *::after {
@@ -67,6 +81,9 @@ a:focus {
 .language-box {
   position: relative;
 }
+.language-box .lang-flag {
+  font-size: 24px;
+}
 .language-box .selected-lang {
   display: flex;
   align-items: center;
@@ -106,11 +123,21 @@ a:focus {
   width: 249px;
 }
 
+.language-box .option-language.show {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   background: url(../../images/bg.png) no-repeat;
   background-size: cover;
+}
+
+button {
+  cursor: pointer;
 }
 
 .btn,
@@ -128,6 +155,12 @@ body {
   box-shadow: 9.09px 4.55px 18.19px 0px rgba(0, 0, 0, 0.0784313725), 0px 0px 8.46px 0px #054095 inset;
   border-radius: 12px;
   width: fit-content;
+}
+.btn.disabled,
+.frozen-btn.disabled {
+  border: 2px solid #353945;
+  background: none;
+  box-shadow: none;
 }
 
 .frozen-btn {
@@ -230,7 +263,7 @@ body {
 }
 
 nav {
-  padding: 16px 8px 16px 18px;
+  padding: 18px 8px 16px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -242,25 +275,32 @@ nav {
   height: 550px;
 }
 .intro .community-logo {
-  width: 487px;
+  width: 510px;
   height: 330px;
   margin: 10px auto 36px auto;
   display: block;
+  object-fit: contain;
+  padding-left: 13px;
 }
 .intro .right-box {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 17px;
 }
 .intro .btns {
   display: flex;
-  gap: 20px;
+  gap: 18px;
+}
+.intro .btns a:nth-child(2), .intro .btns a:last-child {
+  border-radius: 10px;
+  width: 84px;
+  gap: 3px;
 }
 
 .partners {
   max-width: 1425px;
   margin: 0 auto;
-  padding: 21px 0;
+  padding: 23px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -268,8 +308,8 @@ nav {
   transition: all 0.2s linear;
 }
 .partners img {
-  filter: drop-shadow(0px 0px 9px rgba(25, 192, 244, 0.7294117647));
-  opacity: 0.5;
+  filter: drop-shadow(0px 0px 6px rgba(25, 192, 244, 0.7294117647));
+  opacity: 0.3;
 }
 .partners img.active {
   opacity: 1;
@@ -277,7 +317,7 @@ nav {
 }
 
 .rankings-section {
-  padding: 40px 0 0 0;
+  padding: 12px 0 0 0;
   max-width: 1314px;
   margin: 0 auto;
 }
@@ -293,6 +333,7 @@ nav {
   align-items: unset;
   max-width: 1200px;
   width: 100%;
+  height: 260px;
 }
 .rankings-section .rihgt-img__box {
   max-width: 526px;
@@ -311,6 +352,7 @@ nav {
 }
 .rankings-section .rihgt-img__box img {
   height: 100%;
+  width: 100%;
 }
 .rankings-section .day-box {
   font-size: 10px;
@@ -391,13 +433,13 @@ nav {
 }
 .rankings-section .social-media {
   display: flex;
-  gap: 18px;
+  gap: 14px;
   flex-direction: column;
   height: 100%;
-  margin: auto 0;
+  margin: auto 0 auto 12px;
 }
 .rankings-section .ranking-card {
-  padding: 18px 20px;
+  padding: 12px 18px;
   color: #fff;
   display: flex;
   gap: 6px;
@@ -419,15 +461,15 @@ nav {
   text-transform: uppercase;
 }
 .rankings-section .ranking-card .desc {
-  margin: 4px 0 12px 0;
+  margin: 0 0 12px 0;
   font-size: 11px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 13.7px;
 }
 .rankings-section .ranking-card .ratings {
   display: grid;
   grid-template-columns: 128px 138px;
-  column-gap: 24px;
+  column-gap: 23px;
   row-gap: 8px;
 }
 .rankings-section .ranking-card .ratings .rating-label {
@@ -447,7 +489,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-top: 4px;
+  margin-top: 6px;
 }
 .rankings-section .ranking-card .ratings .img-box,
 .rankings-section .ranking-card .ratings .imgs-box {
@@ -479,43 +521,6 @@ nav {
   width: 82px;
   height: 13px;
   border-radius: 24px;
-}
-.rankings-section .ranking-card .bonus-box {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  min-width: 254px;
-}
-.rankings-section .ranking-card .bonus-box .bonus-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 11px;
-  width: 220px;
-}
-.rankings-section .ranking-card .bonus-box .bonus-card {
-  padding: 12.5px;
-  border-radius: 12px;
-  background: #072069;
-  display: flex;
-  grid-template-columns: auto auto auto auto;
-  gap: 4px;
-}
-.rankings-section .ranking-card .bonus-box .bonus-card .box {
-  width: 45px;
-}
-.rankings-section .ranking-card .bonus-box .bonus-card img {
-  width: 25px;
-  height: 25px;
-}
-.rankings-section .ranking-card .bonus-box .box {
-  text-align: center;
-}
-.rankings-section .ranking-card .bonus-box .label {
-  font-size: 10px;
-  font-weight: 500;
-  line-height: 16px;
-  display: block;
-  margin-top: 2px;
 }
 .rankings-section .ranking-card__box {
   display: flex;
@@ -636,15 +641,19 @@ nav {
 }
 .seo .desc {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 32px;
   letter-spacing: -0.02em;
 }
+.seo .desc span {
+  font-weight: 600;
+}
 
 .footer-navigation {
+  max-width: 1300px;
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 39px;
   padding: 58px 0;
   align-items: stretch;
 }
@@ -653,13 +662,88 @@ nav {
   height: unset;
   color: #9e9e9e;
 }
+.footer-navigation .frozen-btn {
+  width: 150px;
+}
 
+.bonus-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 238px;
+}
+.bonus-box .bonus-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  width: 220px;
+}
+.bonus-box .bonus-card {
+  padding: 8px 12px 12px 12.5px;
+  border-radius: 12px;
+  background: #072069;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  height: 68px;
+}
+.bonus-box .bonus-card .box {
+  width: 45px;
+}
+.bonus-box .bonus-card img {
+  width: 25px;
+  height: 25px;
+}
+.bonus-box > .bonus-card {
+  min-width: 26px;
+  max-width: 26px;
+  height: 30px;
+  border-radius: 5.53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.bonus-box > .bonus-card span {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+.bonus-box .box {
+  text-align: center;
+}
+.bonus-box .label {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 16px;
+  display: block;
+}
+
+.page-two .rankings-section {
+  padding: 0;
+}
+.page-two .rankings-section .rankings-cards {
+  gap: 16px;
+}
+.page-two .rankings-section .ranking-card {
+  padding: 18px;
+}
+.page-two .rankings-section .ranking-card .desc {
+  line-height: 14.7px;
+}
+.page-two .rankings-section .day-box {
+  margin-top: 9px;
+}
+.page-two .rankings-section .day-box.mt {
+  margin-top: 0;
+}
 .page-two .intro {
   background: linear-gradient(180deg, rgba(7, 11, 20, 0.6) 0%, rgba(7, 11, 19, 0.581574) 8.08%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(7, 11, 20, 0) 0.17%, rgba(7, 11, 20, 0) 71.27%, rgba(7, 11, 20, 0.38) 85.65%, rgba(7, 11, 20, 0.81) 100%), linear-gradient(360deg, rgba(7, 11, 20, 0) 0.17%, rgba(7, 11, 20, 0) 71.27%, rgba(7, 11, 20, 0.38) 85.65%, rgba(7, 11, 20, 0.81) 100%), url(../../images/intro-bg.gif) no-repeat;
   border-radius: 0px 0px 100px 100px;
 }
 .page-two .ranking-card .ratings {
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 126px 139px 130px 126px;
 }
 .page-two .ranking-card .info-box {
   max-width: 654px;
@@ -676,13 +760,343 @@ nav {
 .page-two .ratings .rating-box:nth-child(6) {
   order: -1;
 }
+.page-two .seo {
+  padding-top: 72px;
+}
 
+.footer .container {
+  padding: 0 27px;
+}
+
+.page-three .seo {
+  padding-top: 26px;
+}
 .page-three .intro {
   background: linear-gradient(180deg, rgba(7, 11, 20, 0.6) 0%, rgba(7, 11, 19, 0.581574) 8.08%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(7, 11, 20, 0) 0.17%, rgba(7, 11, 20, 0) 71.27%, rgba(7, 11, 20, 0.38) 85.65%, rgba(7, 11, 20, 0.81) 100%), linear-gradient(360deg, rgba(7, 11, 20, 0) 0.17%, rgba(7, 11, 20, 0) 71.27%, rgba(7, 11, 20, 0.38) 85.65%, rgba(7, 11, 20, 0.81) 100%), url(../../images/game-art-bg-3.gif);
 }
 
+.page-four .seo {
+  padding-top: 28px;
+}
 .page-four .intro {
   background: linear-gradient(180deg, rgba(7, 11, 20, 0.6) 0%, rgba(7, 11, 19, 0.581574) 8.08%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(7, 11, 20, 0) 0.17%, rgba(7, 11, 20, 0) 71.27%, rgba(7, 11, 20, 0.38) 85.65%, rgba(7, 11, 20, 0.81) 100%), linear-gradient(360deg, rgba(7, 11, 20, 0) 0.17%, rgba(7, 11, 20, 0) 71.27%, rgba(7, 11, 20, 0.38) 85.65%, rgba(7, 11, 20, 0.81) 100%), url(../../images/game-art-bg-4.png) no-repeat;
+}
+
+.server-information .bonus-box.md-block {
+  display: none;
+}
+.server-information .ranking-card {
+  width: 100%;
+}
+.server-information .ranking-card .ratings {
+  display: flex;
+}
+.server-information .ranking-card .info-box {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+.server-information .ranking-card .desc {
+  font-size: 14px;
+  line-height: 20px;
+}
+.server-information .game-world {
+  margin-top: 21px;
+}
+.server-information .game-world .container {
+  display: flex;
+  align-items: start;
+  gap: 36px;
+}
+.server-information .game-world .left-box {
+  max-width: 557px;
+  width: 100%;
+}
+.server-information .game-world .game-world__label {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  display: block;
+  margin-bottom: 14px;
+}
+.server-information .bonus-box {
+  color: #fff;
+}
+.server-information .bonus-cards {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.server-information .achievements-box {
+  margin: 18px 0;
+}
+.server-information .achievements-box .game-world__label {
+  margin-bottom: 16px;
+}
+.server-information .achievements {
+  display: flex;
+  gap: 13px;
+}
+.server-information .achievements .box {
+  width: 63px;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #03214c;
+  border-radius: 13.2px;
+  position: relative;
+}
+.server-information .achievements .box span {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23.89px;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+.server-information .achievements .star-box {
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.server-information .achievements .star-box img {
+  margin-left: -6px;
+}
+.server-information .achievements .star-box img:first-child {
+  margin-left: 0;
+}
+.server-information .project-description .game-world__label {
+  margin-bottom: 12px;
+}
+.server-information .project-description .description-box {
+  border: 1px solid #102c5a;
+  background: rgba(10, 25, 48, 0.5019607843);
+  border-radius: 11.94px;
+  height: 612px;
+  padding: 15px 24px 15px 15px;
+  color: #fff;
+}
+.server-information .project-description .scroll-box {
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.server-information .project-description p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+}
+.server-information .project-description a {
+  color: #005ecc;
+}
+.server-information .reviews-box {
+  width: 100%;
+}
+.server-information .reviews-box .btns {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+.server-information .reviews-box .btns button {
+  border-radius: 50px;
+  padding: 0 12px;
+  height: 37px;
+}
+.server-information .reviews-box .like-btn {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.server-information .reviews-box .comments-parent {
+  overflow-y: auto;
+  height: 939px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.server-information .reviews-box .comments {
+  padding-right: 10px;
+  color: #fff;
+}
+.server-information .reviews-box .comment-box {
+  position: relative;
+  padding: 11px 14px;
+  border-radius: 12px;
+  background: #011a44;
+}
+.server-information .reviews-box .comment-box::before {
+  content: "";
+  position: absolute;
+  background: url(../../images/icons/rounded-line.svg) no-repeat;
+  bottom: -25px;
+  left: 0;
+  width: 18px;
+  height: 42px;
+  background-size: 124% 105%;
+}
+.server-information .reviews-box .comment-box .box {
+  border-radius: 0px 12px 12px 12px;
+  padding: 16px 16px 16px 10px;
+  border: 1px solid rgba(67, 190, 24, 0.2705882353);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.server-information .reviews-box .comment-box .box.no-recommendation {
+  border-color: rgba(221, 1, 41, 0.5019607843);
+}
+.server-information .reviews-box .comment-box .scroll-box {
+  height: 122px;
+  overflow-y: auto;
+  padding-bottom: 22px;
+}
+.server-information .reviews-box .comment-box .scroll-box::-webkit-scrollbar-thumb {
+  background: #033173;
+}
+.server-information .reviews-box .comment-box .scroll-box::-webkit-scrollbar-track {
+  background: #031f4d;
+}
+.server-information .reviews-box .user-name__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+.server-information .reviews-box .user-name__box .left-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.server-information .reviews-box .recommendation {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.server-information .reviews-box .recommendation span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 5px;
+  letter-spacing: -0.02em;
+}
+.server-information .reviews-box .desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.server-information .reviews-box .hide-admin__ansver {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 27px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  height: 25px;
+  border-radius: 12px;
+  background: #011a44;
+  width: fit-content;
+  padding: 0 10px;
+  margin: 10px 0 10px 11px;
+}
+.server-information .reviews-box .hide-admin__ansver .minus {
+  border: 2.33px solid #ffffff;
+  width: 12px;
+  border-radius: 2px;
+}
+.server-information .admin-ansver {
+  display: flex;
+  align-items: start;
+}
+.server-information .admin-ansver .comment {
+  padding: 14px 25px 14px 12px;
+  border-radius: 12px 12px 12px 0px;
+  background: #001941;
+}
+.server-information .admin-ansver .desc {
+  font-weight: 500;
+}
+.server-information .admin-ansver .admin-avatar {
+  margin-top: 33px;
+}
+.server-information .admin-ansver .top-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 7px;
+}
+.server-information .admin-ansver .status {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #0043a7;
+  border-radius: 100px;
+  padding: 2px 7.5px;
+}
+.server-information .admin-ansver .status span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.009em;
+}
+.server-information .admin-ansver .comment-date {
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 13.31px;
+  color: #70b2ff;
+  margin-top: 12px;
+  text-align: right;
+  display: block;
+}
+.server-information .user-name {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+.server-information .media-block__box-footer {
+  display: flex;
+  margin-top: 24px;
+  justify-content: space-between;
+  width: 100%;
+  height: 30px;
+}
+.server-information .media-block__box-footer .date {
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #70b2ff;
+  padding: 0 8px;
+  border-radius: 12px;
+  background: #032d73;
+  height: 30px;
+}
+.server-information .media-block__box-footer .problem-solved__box {
+  padding: 0 8px;
+  background: #004eda;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  height: 30px;
+  line-height: 30px;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .md-show,
@@ -831,6 +1245,83 @@ nav {
   }
   .intro {
     border-radius: 0 0 32px 32px !important;
+  }
+  .server-information .game-world .container {
+    flex-direction: column;
+  }
+  .server-information .game-world .left-box {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .server-information .project-description {
+    order: -1;
+  }
+  .server-information .project-description .scroll-box {
+    padding-right: 10px;
+  }
+  .server-information .game-world .left-box > .game-world__label {
+    display: none;
+  }
+  .server-information .game-world .bonus-box {
+    display: none;
+  }
+  .server-information .reviews-box .user-name__box .left-box {
+    display: flex;
+    flex-direction: row !important;
+  }
+  .server-information .reviews-box .comment-box .box {
+    align-items: start;
+  }
+  .server-information .reviews-box .comment-box .box > img {
+    margin-top: 18px;
+  }
+  .server-information .reviews-box .comments-parent {
+    gap: 22px;
+  }
+  .server-information .bonus-box.md-block {
+    display: flex;
+  }
+  .server-information .bonus-box.md-block > .bonus-card {
+    display: none;
+  }
+  .server-information .bonus-cards {
+    display: flex;
+  }
+  .server-information .ranking-card {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .server-information .ranking-card .ratings {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .server-information .rankings-section .social-media {
+    bottom: 139px !important;
+  }
+  .server-information .ranking-card .info-box {
+    gap: 12px;
+  }
+  .server-information .ranking-card .desc {
+    margin-bottom: 0;
+  }
+  .server-information .diamond-img {
+    display: none;
+  }
+  .server-information .user-name span {
+    display: none;
+  }
+  .server-information .reviews-box .recommendation span {
+    margin-top: 0;
+  }
+  .server-information .reviews-box .user-name__box {
+    margin-bottom: 12px;
+  }
+  .server-information .reviews-box .recommendation img {
+    margin-top: -4px;
+  }
+  .server-information .reviews-box .comments-parent::-webkit-scrollbar {
+    display: none;
   }
 }
 @media screen and (max-width: 768px) {
@@ -982,6 +1473,45 @@ nav {
   }
   .rankings-section .day-box__flex {
     gap: 12px;
+  }
+  .server-information .project-description .description-box {
+    height: 388px;
+    padding: 16px 10px 20px 12px;
+  }
+  .server-information .reviews-box .btns button:nth-child(2) span {
+    display: none;
+  }
+  .server-information .achievements {
+    justify-content: space-between;
+  }
+  .server-information .game-world .container {
+    gap: 35px;
+  }
+  .server-information .achievements .star-box img {
+    width: 10px;
+    height: 10px;
+    margin-left: -5px;
+  }
+  .server-information .achievements .box {
+    width: 50px;
+    height: 50px;
+    padding: 9px;
+  }
+  .server-information .achievements .box img {
+    width: 100%;
+  }
+  .server-information .achievements .box:last-child {
+    display: none;
+  }
+  .server-information .seo {
+    padding-top: 28px;
+  }
+  .seo {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .footer {
+    background: transparent;
   }
 }
 @media screen and (max-width: 480px) {

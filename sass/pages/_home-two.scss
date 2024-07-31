@@ -1,4 +1,23 @@
 .page-two {
+  .rankings-section {
+    padding: 0;
+  }
+  .rankings-section .rankings-cards {
+    gap: 16px;
+  }
+  .rankings-section .ranking-card {
+    padding: 18px;
+  }
+  .rankings-section .ranking-card .desc {
+    line-height: 14.7px;
+  }
+  .rankings-section .day-box {
+    margin-top: 9px;
+
+    &.mt {
+      margin-top: 0;
+    }
+  }
   .intro {
     background: linear-gradient(
         180deg,
@@ -24,7 +43,7 @@
     border-radius: 0px 0px 100px 100px;
   }
   .ranking-card .ratings {
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 126px 139px 130px 126px;
   }
   .ranking-card .info-box {
     max-width: 654px;
@@ -45,10 +64,18 @@
       }
     }
   }
+  .seo {
+    padding-top: 72px;
+  }
 }
-
+.footer .container {
+  padding: 0 27px;
+}
 // page-three
 .page-three {
+  .seo {
+    padding-top: 26px;
+  }
   .intro {
     background: linear-gradient(
         180deg,
@@ -75,6 +102,9 @@
 }
 
 .page-four {
+  .seo {
+    padding-top: 28px;
+  }
   .intro {
     background: linear-gradient(
         180deg,

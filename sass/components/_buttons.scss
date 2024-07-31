@@ -1,3 +1,6 @@
+button {
+  cursor: pointer;
+}
 .btn,
 .frozen-btn {
   display: flex;
@@ -19,6 +22,12 @@
     0px 0px 8.46px 0px #054095 inset;
   border-radius: 12px;
   width: fit-content;
+
+  &.disabled {
+    border: 2px solid #353945;
+    background: none;
+    box-shadow: none;
+  }
 }
 .frozen-btn {
   background: linear-gradient(

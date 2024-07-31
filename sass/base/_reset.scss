@@ -3,6 +3,17 @@
 html {
   box-sizing: border-box;
 }
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #003687;
+  border-radius: 2.99px;
+}
+::-webkit-scrollbar-track {
+  background: #092250;
+  border-radius: 2.99px;
+}
 
 *,
 *::before,
@@ -64,6 +75,9 @@ a:focus {
 .language-box {
   position: relative;
 
+  .lang-flag {
+    font-size: 24px;
+  }
   .selected-lang {
     display: flex;
     align-items: center;
@@ -106,4 +120,9 @@ a:focus {
   .tab-item {
     width: 249px;
   }
+}
+.language-box .option-language.show {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
