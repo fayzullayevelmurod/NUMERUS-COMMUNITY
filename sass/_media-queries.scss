@@ -247,7 +247,23 @@
   }
   .server-information {
     .rankings-section .social-media {
-      bottom: 139px !important;
+      bottom: 101px !important;
+      right: 6px;
+    }
+  }
+  .rankings-section .social-media {
+    margin: 0;
+  }
+  .rankings-section .rankings-cards {
+    gap: 30px !important;
+  }
+  .server-information .fire-btn {
+    display: none;
+  }
+  .server-information {
+    border-radius: 12px;
+    .content-box {
+      overflow: hidden;
     }
   }
   .server-information .ranking-card .info-box {
@@ -277,6 +293,12 @@
     &::-webkit-scrollbar {
       display: none;
     }
+  }
+  .rankings-section .content-box {
+    height: unset;
+  }
+  .server-information .bonus-cards {
+    width: fit-content;
   }
 }
 
@@ -409,7 +431,10 @@
     display: none;
   }
   .md-show {
-    display: flex;
+    display: flex !important;
+  }
+  .footer-navigation {
+    gap: 24px !important;
   }
   .footer {
     background: #040e1a;
@@ -495,8 +520,11 @@
     padding-left: 25px;
     padding-right: 25px;
   }
-  .footer{
+  .footer {
     background: transparent;
+  }
+  .server-information .media-block__box-footer {
+    display: flex;
   }
 }
 

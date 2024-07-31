@@ -782,11 +782,39 @@ nav {
   background: linear-gradient(180deg, rgba(7, 11, 20, 0.6) 0%, rgba(7, 11, 19, 0.581574) 8.08%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(7, 11, 20, 0) 0.17%, rgba(7, 11, 20, 0) 71.27%, rgba(7, 11, 20, 0.38) 85.65%, rgba(7, 11, 20, 0.81) 100%), linear-gradient(360deg, rgba(7, 11, 20, 0) 0.17%, rgba(7, 11, 20, 0) 71.27%, rgba(7, 11, 20, 0.38) 85.65%, rgba(7, 11, 20, 0.81) 100%), url(../../images/game-art-bg-4.png) no-repeat;
 }
 
+.server-information .seo {
+  padding-top: 67px;
+}
+.server-information .rankings-section {
+  padding-top: 26px;
+}
+.server-information .ranking-card .title-box .title {
+  font-size: 32px;
+  line-height: 40px;
+}
+.server-information .rankings-section .ranking-card {
+  padding: 20px 18px;
+}
 .server-information .bonus-box.md-block {
   display: none;
 }
 .server-information .ranking-card {
   width: 100%;
+}
+.server-information .content-box {
+  position: relative;
+  overflow: visible;
+}
+.server-information .fire-btn {
+  position: absolute;
+  bottom: -21px;
+  z-index: 100;
+  right: 150px;
+  height: 43px;
+  padding-left: 0;
+  width: 186px;
+  justify-content: center;
+  gap: 13px;
 }
 .server-information .ranking-card .ratings {
   display: flex;
@@ -801,6 +829,7 @@ nav {
 .server-information .ranking-card .desc {
   font-size: 14px;
   line-height: 20px;
+  padding-top: 8px;
 }
 .server-information .game-world {
   margin-top: 21px;
@@ -821,24 +850,31 @@ nav {
   line-height: 24px;
   letter-spacing: -0.01em;
   display: block;
-  margin-bottom: 14px;
+  margin-bottom: 5px;
 }
 .server-information .bonus-box {
   color: #fff;
+  width: 100%;
 }
 .server-information .bonus-cards {
   display: grid;
+  gap: 20px;
   grid-template-columns: auto auto;
+  width: 100%;
+}
+.server-information .bonus-card {
+  justify-content: center;
+  height: 83px;
 }
 .server-information .achievements-box {
-  margin: 18px 0;
+  margin: 14px 0 22px 0;
 }
 .server-information .achievements-box .game-world__label {
-  margin-bottom: 16px;
+  margin-bottom: 7px;
 }
 .server-information .achievements {
   display: flex;
-  gap: 13px;
+  gap: 14px;
 }
 .server-information .achievements .box {
   width: 63px;
@@ -881,7 +917,7 @@ nav {
   background: rgba(10, 25, 48, 0.5019607843);
   border-radius: 11.94px;
   height: 612px;
-  padding: 15px 24px 15px 15px;
+  padding: 15px 7px 15px 15px;
   color: #fff;
 }
 .server-information .project-description .scroll-box {
@@ -902,6 +938,7 @@ nav {
 }
 .server-information .reviews-box {
   width: 100%;
+  margin-top: 9px;
 }
 .server-information .reviews-box .btns {
   display: flex;
@@ -953,7 +990,7 @@ nav {
   border: 1px solid rgba(67, 190, 24, 0.2705882353);
   display: flex;
   gap: 10px;
-  align-items: center;
+  align-items: start;
 }
 .server-information .reviews-box .comment-box .box.no-recommendation {
   border-color: rgba(221, 1, 41, 0.5019607843);
@@ -1069,7 +1106,7 @@ nav {
   letter-spacing: -0.02em;
 }
 .server-information .media-block__box-footer {
-  display: flex;
+  display: none;
   margin-top: 24px;
   justify-content: space-between;
   width: 100%;
@@ -1093,6 +1130,24 @@ nav {
   font-weight: 500;
   height: 30px;
   line-height: 30px;
+}
+.server-information .bonus-box .bonus-card img {
+  width: 30px;
+  height: 30px;
+}
+.server-information .bonus-card .box {
+  width: 55px;
+}
+.server-information .ranking-card__box.green .ranking-card,
+.server-information .rankings-section .rihgt-img__box {
+  border-radius: inherit;
+}
+.server-information .ranking-card__box.green .ranking-card {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.server-information .rankings-section .rihgt-img__box img {
+  border-radius: inherit;
 }
 
 .w-full {
@@ -1297,7 +1352,23 @@ nav {
     grid-template-columns: auto auto;
   }
   .server-information .rankings-section .social-media {
-    bottom: 139px !important;
+    bottom: 101px !important;
+    right: 6px;
+  }
+  .rankings-section .social-media {
+    margin: 0;
+  }
+  .rankings-section .rankings-cards {
+    gap: 30px !important;
+  }
+  .server-information .fire-btn {
+    display: none;
+  }
+  .server-information {
+    border-radius: 12px;
+  }
+  .server-information .content-box {
+    overflow: hidden;
   }
   .server-information .ranking-card .info-box {
     gap: 12px;
@@ -1322,6 +1393,12 @@ nav {
   }
   .server-information .reviews-box .comments-parent::-webkit-scrollbar {
     display: none;
+  }
+  .rankings-section .content-box {
+    height: unset;
+  }
+  .server-information .bonus-cards {
+    width: fit-content;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1438,7 +1515,10 @@ nav {
     display: none;
   }
   .md-show {
-    display: flex;
+    display: flex !important;
+  }
+  .footer-navigation {
+    gap: 24px !important;
   }
   .footer {
     background: #040e1a;
@@ -1512,6 +1592,9 @@ nav {
   }
   .footer {
     background: transparent;
+  }
+  .server-information .media-block__box-footer {
+    display: flex;
   }
 }
 @media screen and (max-width: 480px) {

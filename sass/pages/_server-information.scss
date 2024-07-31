@@ -1,12 +1,42 @@
 .server-information {
+  .seo {
+    padding-top: 67px;
+  }
+  .rankings-section {
+    padding-top: 26px;
+  }
+  .ranking-card .title-box .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .rankings-section .ranking-card {
+    padding: 20px 18px;
+  }
   .bonus-box.md-block {
     display: none;
   }
   .ranking-card {
     width: 100%;
   }
+  .content-box {
+    position: relative;
+    overflow: visible;
+  }
+  .fire-btn {
+    position: absolute;
+    bottom: -21px;
+    z-index: 100;
+    right: 150px;
+    height: 43px;
+    padding-left: 0;
+    width: 186px;
+    justify-content: center;
+    gap: 13px;
+  }
   .ranking-card .ratings {
     display: flex;
+    // display: grid;
+    // grid-template-columns: 120px 127px 112px 127px;
   }
   .ranking-card .info-box {
     max-width: 100%;
@@ -18,6 +48,7 @@
   .ranking-card .desc {
     font-size: 14px;
     line-height: 20px;
+    padding-top: 8px;
   }
 
   // game world section
@@ -41,25 +72,32 @@
       line-height: 24px;
       letter-spacing: -0.01em;
       display: block;
-      margin-bottom: 14px;
+      margin-bottom: 5px;
     }
   }
   .bonus-box {
     color: #fff;
+    width: 100%;
   }
   .bonus-cards {
     display: grid;
+    gap: 20px;
     grid-template-columns: auto auto;
+    width: 100%;
+  }
+  .bonus-card {
+    justify-content: center;
+    height: 83px;
   }
   .achievements-box {
-    margin: 18px 0;
+    margin: 14px 0 22px 0;
     .game-world__label {
-      margin-bottom: 16px;
+      margin-bottom: 7px;
     }
   }
   .achievements {
     display: flex;
-    gap: 13px;
+    gap: 14px;
     .box {
       width: 63px;
       height: 63px;
@@ -104,7 +142,7 @@
       background: #0a193080;
       border-radius: 11.94px;
       height: 612px;
-      padding: 15px 24px 15px 15px;
+      padding: 15px 7px 15px 15px;
       color: #fff;
     }
     .scroll-box {
@@ -127,6 +165,7 @@
 
   .reviews-box {
     width: 100%;
+    margin-top: 9px;
     .btns {
       display: flex;
       gap: 6px;
@@ -179,7 +218,7 @@
         border: 1px solid #43be1845;
         display: flex;
         gap: 10px;
-        align-items: center;
+        align-items: start;
 
         &.no-recommendation {
           border-color: #dd012980;
@@ -299,7 +338,7 @@
     letter-spacing: -0.02em;
   }
   .media-block__box-footer {
-    display: flex;
+    display: none;
     margin-top: 24px;
     justify-content: space-between;
     width: 100%;
@@ -323,6 +362,24 @@
       height: 30px;
       line-height: 30px;
     }
+  }
+  .bonus-box .bonus-card img {
+    width: 30px;
+    height: 30px;
+  }
+  .bonus-card .box {
+    width: 55px;
+  }
+  .ranking-card__box.green .ranking-card,
+  .rankings-section .rihgt-img__box {
+    border-radius: inherit;
+  }
+  .ranking-card__box.green .ranking-card{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .rankings-section .rihgt-img__box img{
+    border-radius: inherit;
   }
 }
 .w-full {
