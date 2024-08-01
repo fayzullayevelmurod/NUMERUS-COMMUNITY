@@ -13,11 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const selectedName = selectedLang.querySelector(".lang-name");
     const optionFlag = optionLanguage.querySelector(".lang-flag");
     const optionName = optionLanguage.querySelector(".lang-name");
+    console.log(selectedFlag.src);
 
     // flag va name elementlarini almashtirish
-    [selectedFlag.textContent, optionFlag.textContent] = [
-      optionFlag.textContent,
-      selectedFlag.textContent,
+    [selectedFlag.src, optionFlag.src] = [
+      optionFlag.src,
+      selectedFlag.src,
     ];
     [selectedName.textContent, optionName.textContent] = [
       optionName.textContent,

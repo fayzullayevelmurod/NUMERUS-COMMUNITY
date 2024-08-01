@@ -33,6 +33,7 @@
 
 .partners {
   max-width: 1425px;
+  height: 106px;
   margin: 0 auto;
   padding: 23px 0;
   display: flex;
@@ -41,20 +42,29 @@
   gap: 20px;
   transition: all 0.2s linear;
 
-  img {
-    filter: drop-shadow(0px 0px 6px #19C0F4BA);
-    opacity: 0.3;
+  a {
+    &:first-child,
+    &:last-child,
+    &:nth-child(3) {
+      img {
+        opacity: 1;
+      }
+    }
 
-    &.active {
-      opacity: 1;
-      filter: drop-shadow(0px 3px 4.5px #00baf440);
+    img {
+      opacity: 0.3;
+
+      &.active {
+        opacity: 1;
+        filter: drop-shadow(0px 3px 4.5px #00baf440);
+      }
     }
   }
 }
 
 // rankings-section
 .rankings-section {
-  padding: 12px 0 0 0;
+  padding: 15px 0 0 0;
   max-width: 1314px;
   margin: 0 auto;
 
@@ -76,8 +86,11 @@
   .rihgt-img__box {
     max-width: 526px;
     width: 100%;
-    background: #011133;
     position: relative;
+
+    &.no-img {
+      background: #011133;
+    }
 
     &::before {
       content: "";
@@ -229,6 +242,7 @@
       font-size: 11px;
       font-weight: 400;
       line-height: 13.7px;
+      font-family: "Inter", sans-serif;
     }
     .ratings {
       display: grid;

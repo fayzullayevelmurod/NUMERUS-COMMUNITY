@@ -299,6 +299,7 @@ nav {
 
 .partners {
   max-width: 1425px;
+  height: 106px;
   margin: 0 auto;
   padding: 23px 0;
   display: flex;
@@ -307,17 +308,19 @@ nav {
   gap: 20px;
   transition: all 0.2s linear;
 }
-.partners img {
-  filter: drop-shadow(0px 0px 6px rgba(25, 192, 244, 0.7294117647));
+.partners a:first-child img, .partners a:last-child img, .partners a:nth-child(3) img {
+  opacity: 1;
+}
+.partners a img {
   opacity: 0.3;
 }
-.partners img.active {
+.partners a img.active {
   opacity: 1;
   filter: drop-shadow(0px 3px 4.5px rgba(0, 186, 244, 0.2509803922));
 }
 
 .rankings-section {
-  padding: 12px 0 0 0;
+  padding: 15px 0 0 0;
   max-width: 1314px;
   margin: 0 auto;
 }
@@ -338,8 +341,10 @@ nav {
 .rankings-section .rihgt-img__box {
   max-width: 526px;
   width: 100%;
-  background: #011133;
   position: relative;
+}
+.rankings-section .rihgt-img__box.no-img {
+  background: #011133;
 }
 .rankings-section .rihgt-img__box::before {
   content: "";
@@ -465,6 +470,7 @@ nav {
   font-size: 11px;
   font-weight: 400;
   line-height: 13.7px;
+  font-family: "Inter", sans-serif;
 }
 .rankings-section .ranking-card .ratings {
   display: grid;
@@ -1216,7 +1222,7 @@ nav {
   }
   .rankings-section .rihgt-img__box::before {
     top: unset;
-    bottom: 0;
+    bottom: -1px;
     height: 175px;
   }
   .rankings-section .social-media {
