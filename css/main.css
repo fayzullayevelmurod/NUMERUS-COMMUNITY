@@ -308,11 +308,15 @@ nav {
   gap: 20px;
   transition: all 0.2s linear;
 }
+.partners a:first-child img {
+  width: 173px;
+  height: 56px;
+}
 .partners a:first-child img, .partners a:last-child img, .partners a:nth-child(3) img {
   opacity: 1;
 }
 .partners a img {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 .partners a img.active {
   opacity: 1;

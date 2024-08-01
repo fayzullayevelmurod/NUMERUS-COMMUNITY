@@ -43,6 +43,12 @@
   transition: all 0.2s linear;
 
   a {
+    &:first-child {
+      img {
+        width: 173px;
+        height: 56px;
+      }
+    }
     &:first-child,
     &:last-child,
     &:nth-child(3) {
@@ -52,7 +58,7 @@
     }
 
     img {
-      opacity: 0.3;
+      opacity: 0.5;
 
       &.active {
         opacity: 1;
