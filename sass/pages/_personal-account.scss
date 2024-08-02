@@ -64,6 +64,121 @@
       }
     }
   }
+
+  .info-project {
+    max-width: 1200px;
+    margin: 33px auto 0 auto;
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    color: #fff;
+
+    &>div {
+      flex: 1 1 auto;
+    }
+
+    .rihgt-side {
+      padding: 12px 20px 16px 20px;
+      border-radius: 12px;
+      background: #0A193080;
+      border: 1px solid #003687;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      max-width: 544px;
+
+      .box {
+        padding: 12px 12px 17px 20px;
+        background: #0A193080;
+
+        p {
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 20px;
+          letter-spacing: -0.02em;
+        }
+
+        a {
+          color: #005ECC;
+        }
+      }
+
+      .scroll-box {
+        max-height: 218px;
+        overflow-y: auto;
+        padding-right: 14px;
+      }
+
+      .flex-box {
+        display: flex;
+        align-items: start;
+        gap: 18px;
+        margin-bottom: 14px;
+
+        p {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          color: #ced0d4;
+        }
+      }
+
+      .btns {
+        gap: 24px;
+        display: flex;
+      }
+
+      .copy-btn {}
+
+      .primary-btn__two {
+        background: #004ED2;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        color: #cfd0d4;
+        width: 100%;
+      }
+    }
+
+    .box {
+      background: #2141B01A;
+      border: 1px solid #003687;
+      border-radius: 12px;
+
+      &.buy-box {
+        padding: 20px 26px;
+      }
+    }
+
+    .label {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+      color: #fff;
+      padding-bottom: 4px;
+      display: inline-block;
+    }
+
+    .green-btn {
+      width: 222px;
+    }
+
+    .title-box {
+      padding: 5px 24px;
+      border-radius: 12px;
+      background: linear-gradient(270deg, rgba(10, 25, 48, 0.5) 0%, rgba(31, 78, 150, 0.5) 100%);
+      border: 0.75px solid #1E56B2;
+
+      h5 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 40px;
+        letter-spacing: -0.02em;
+      }
+    }
+  }
 }
 
 .panels {

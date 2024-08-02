@@ -262,6 +262,52 @@ button {
   background: #3063E9;
 }
 
+.green-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  padding: 13px;
+  border-radius: 12px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.green-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  z-index: -1;
+  background: radial-gradient(123.7% 123.7% at 50% 23.3%, rgba(0, 134, 255, 0) 36.86%, rgba(1, 205, 252, 0.487085) 70.93%, rgba(1, 251, 251, 0.8) 100%), radial-gradient(53% 53% at 50% 106%, rgba(1, 251, 251, 0.8) 9.77%, rgba(1, 205, 252, 0) 74.08%, rgba(0, 134, 255, 0) 100%), linear-gradient(0deg, rgba(1, 124, 167, 0.21), rgba(1, 124, 167, 0.21)), linear-gradient(90deg, rgba(34, 151, 57, 0.6) 0%, rgba(34, 151, 57, 0) 100%);
+}
+.green-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  z-index: -2;
+  border: 2.3px solid;
+  background: linear-gradient(182.75deg, rgba(189, 0, 255, 0) -15.61%, #FFFFFF 97.7%), linear-gradient(0deg, #1FD7FF, #1FD7FF), linear-gradient(90deg, #96F49C 16%, rgba(150, 244, 156, 0) 59%);
+  background-origin: border-box;
+  -webkit-mask: linear-gradient(black, black) content-box, linear-gradient(black, black);
+  mask: linear-gradient(black, black), linear-gradient(black, black);
+  -webkit-mask-clip: content-box, border-box;
+  mask-clip: content-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
 .footer {
   background: #000815;
   padding: 14px 0;
@@ -1242,6 +1288,102 @@ nav {
   font-weight: 500;
   line-height: 20px;
   display: inline-block;
+}
+.personal-account .info-project {
+  max-width: 1200px;
+  margin: 33px auto 0 auto;
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  color: #fff;
+}
+.personal-account .info-project > div {
+  flex: 1 1 auto;
+}
+.personal-account .info-project .rihgt-side {
+  padding: 12px 20px 16px 20px;
+  border-radius: 12px;
+  background: rgba(10, 25, 48, 0.5019607843);
+  border: 1px solid #003687;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 544px;
+}
+.personal-account .info-project .rihgt-side .box {
+  padding: 12px 12px 17px 20px;
+  background: rgba(10, 25, 48, 0.5019607843);
+}
+.personal-account .info-project .rihgt-side .box p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+.personal-account .info-project .rihgt-side .box a {
+  color: #005ECC;
+}
+.personal-account .info-project .rihgt-side .scroll-box {
+  max-height: 218px;
+  overflow-y: auto;
+  padding-right: 14px;
+}
+.personal-account .info-project .rihgt-side .flex-box {
+  display: flex;
+  align-items: start;
+  gap: 18px;
+  margin-bottom: 14px;
+}
+.personal-account .info-project .rihgt-side .flex-box p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #ced0d4;
+}
+.personal-account .info-project .rihgt-side .btns {
+  gap: 24px;
+  display: flex;
+}
+.personal-account .info-project .rihgt-side .primary-btn__two {
+  background: #004ED2;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #cfd0d4;
+  width: 100%;
+}
+.personal-account .info-project .box {
+  background: rgba(33, 65, 176, 0.1019607843);
+  border: 1px solid #003687;
+  border-radius: 12px;
+}
+.personal-account .info-project .box.buy-box {
+  padding: 20px 26px;
+}
+.personal-account .info-project .label {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #fff;
+  padding-bottom: 4px;
+  display: inline-block;
+}
+.personal-account .info-project .green-btn {
+  width: 222px;
+}
+.personal-account .info-project .title-box {
+  padding: 5px 24px;
+  border-radius: 12px;
+  background: linear-gradient(270deg, rgba(10, 25, 48, 0.5) 0%, rgba(31, 78, 150, 0.5) 100%);
+  border: 0.75px solid #1E56B2;
+}
+.personal-account .info-project .title-box h5 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -0.02em;
 }
 
 .panels {
