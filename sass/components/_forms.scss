@@ -1,0 +1,56 @@
+.custom-select {
+  position: relative;
+
+  .select-option {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none !important;
+    z-index: 10;
+
+    &.show {
+      display: flex !important;
+    }
+
+    .option-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      width: 100%;
+      margin-left: 13px;
+      cursor: pointer;
+
+      &:hover .option-item__box {
+        background: #063362;
+      }
+    }
+
+    .option-img {
+      width: 32px;
+      height: 32px;
+    }
+
+    .option-item__box {
+      background: #07223E;
+      padding: 12px;
+      border-radius: 12px;
+      width: 178px;
+      transition: all .2s linear;
+    }
+
+    .option-text {
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 19.6px;
+    }
+  }
+
+  .select-option {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 14px;
+  }
+}

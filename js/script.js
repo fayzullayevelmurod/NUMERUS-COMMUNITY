@@ -37,4 +37,48 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   } catch (error) {}
+
+  // select
+  try {
+    const customSelects = document.querySelectorAll('.custom-select');
+    let activeSelect = null;
+
+    customSelects.forEach((select) => {
+      const selectedBox = select.querySelector('.selected-box');
+      const selectOption = select.querySelector('.select-option');
+      const selectedImg = select.querySelector('.selected-img');
+      const selectedText = select.querySelector('.selected-text');
+      const optionItems = selectOption.querySelectorAll('.option-item');
+
+      selectedBox.addEventListener('click', () => {
+        if (activeSelect && activeSelect !== selectOption) {
+          activeSelect.classList.remove('show');
+        }
+        selectOption.classList.toggle('show');
+        activeSelect = selectOption.classList.contains('show')
+          ? selectOption
+          : null;
+      });
+
+      optionItems.forEach((option) => {
+        option.addEventListener('click', () => {
+          const optionImg = option.querySelector('.option-img').src;
+          const optionText = option.querySelector('.option-text').textContent;
+          selectedImg.src = optionImg;
+          selectedText.textContent = optionText;
+          selectOption.classList.remove('show');
+          activeSelect = null;
+        });
+      });
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!event.target.closest('.custom-select')) {
+        if (activeSelect) {
+          activeSelect.classList.remove('show');
+          activeSelect = null;
+        }
+      }
+    });
+  } catch (error) {}
 });
