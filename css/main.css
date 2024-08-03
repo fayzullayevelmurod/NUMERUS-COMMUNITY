@@ -1398,7 +1398,7 @@ nav {
   flex: 1 1 auto;
 }
 .personal-account .info-project .rihgt-side {
-  padding: 12px 20px 16px 20px;
+  padding: 12px 20px 10px 20px;
   border-radius: 12px;
   background: rgba(10, 25, 48, 0.5019607843);
   border: 1px solid #003687;
@@ -1408,7 +1408,7 @@ nav {
   max-width: 544px;
 }
 .personal-account .info-project .rihgt-side .box {
-  padding: 12px 12px 17px 20px;
+  padding: 12px 10px 17px 20px;
   background: rgba(10, 25, 48, 0.5019607843);
 }
 .personal-account .info-project .rihgt-side .box p {
@@ -1421,7 +1421,7 @@ nav {
   color: #005ECC;
 }
 .personal-account .info-project .rihgt-side .scroll-box {
-  max-height: 218px;
+  max-height: 187px;
   overflow-y: auto;
   padding-right: 14px;
 }
@@ -1516,7 +1516,7 @@ nav {
 .panels .top-box .logo {
   display: block;
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 3px;
 }
 .panels .user-box {
   display: flex;
@@ -1552,12 +1552,29 @@ nav {
 .panels .panel-boxes {
   border-top: 1px solid #0b2045;
   border-bottom: 1px solid #0b2045;
-  padding: 12px 14px;
+  padding: 10px 16px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.panels .panel-boxes.no-gap {
+  gap: 0 !important;
+  padding-bottom: 10px !important;
+}
+.panels .panel-boxes.scroll {
+  padding-right: 20px;
 }
 .panels .panel-boxes .scroll-box {
   height: 272px;
   overflow-y: auto;
-  padding-right: 16px;
+  padding-right: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 3px;
+}
+.panels .panel-boxes .scroll-box .panel-box {
+  padding-right: 28px;
 }
 .panels .panel-boxes.bt-none {
   border-top: none;
@@ -1585,7 +1602,7 @@ nav {
   text-align: center;
 }
 .panels .panel-boxes .panel-box {
-  padding: 12px 17px;
+  padding: 12px 19px;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -1624,8 +1641,8 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 26px 20px 30px 26px;
-  margin-top: 24px;
+  padding: 24px 20px 24px 26px;
+  margin-top: 22px;
   background: rgba(10, 25, 48, 0.5019607843) !important;
 }
 .panels .links-box .social-img {

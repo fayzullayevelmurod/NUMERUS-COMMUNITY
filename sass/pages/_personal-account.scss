@@ -88,7 +88,7 @@
     }
 
     .rihgt-side {
-      padding: 12px 20px 16px 20px;
+      padding: 12px 20px 10px 20px;
       border-radius: 12px;
       background: #0A193080;
       border: 1px solid #003687;
@@ -98,7 +98,7 @@
       max-width: 544px;
 
       .box {
-        padding: 12px 12px 17px 20px;
+        padding: 12px 10px 17px 20px;
         background: #0A193080;
 
         p {
@@ -114,7 +114,7 @@
       }
 
       .scroll-box {
-        max-height: 218px;
+        max-height: 187px;
         overflow-y: auto;
         padding-right: 14px;
       }
@@ -228,7 +228,7 @@
     .logo {
       display: block;
       text-align: center;
-      margin-bottom: 8px;
+      margin-bottom: 3px;
     }
   }
 
@@ -271,12 +271,32 @@
   .panel-boxes {
     border-top: 1px solid #0b2045;
     border-bottom: 1px solid #0b2045;
-    padding: 12px 14px;
+    padding: 10px 16px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &.no-gap {
+      gap: 0 !important;
+      padding-bottom: 10px !important;
+    }
+
+    &.scroll {
+      padding-right: 20px;
+    }
 
     .scroll-box {
       height: 272px;
       overflow-y: auto;
-      padding-right: 16px;
+      padding-right: 17px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 3px;
+
+      .panel-box {
+        padding-right: 28px;
+      }
     }
 
     &.bt-none {
@@ -310,7 +330,7 @@
 
 
     .panel-box {
-      padding: 12px 17px;
+      padding: 12px 19px;
       border-radius: 8px;
       display: flex;
       align-items: center;
@@ -359,8 +379,8 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    padding: 26px 20px 30px 26px;
-    margin-top: 24px;
+    padding: 24px 20px 24px 26px;
+    margin-top: 22px;
     background: #0A193080 !important;
 
     .social-img {
