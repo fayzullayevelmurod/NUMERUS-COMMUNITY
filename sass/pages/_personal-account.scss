@@ -2,6 +2,7 @@
   background:
     url(../../images/personal-account-bg.png) no-repeat;
   background-size: cover;
+
 }
 
 .personal-account {
@@ -737,6 +738,15 @@
 .personal-account__three {
   color: #fff;
 
+  .title-label {
+    display: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.4300000071525574px;
+    margin: 15px 0;
+  }
+
   .servers-box {
     margin: 108px 0 0 60px;
     padding: 22px 41px 26px 24px;
@@ -916,6 +926,9 @@
     .chart-img {
       width: 100%;
 
+      &.media-chart {
+        display: none;
+      }
     }
 
     .chart-title {
@@ -967,4 +980,8 @@
   border: 1px solid #0190CD36;
   border-radius: 5.34px;
   cursor: pointer;
+}
+
+.personal-account__three .box-icon {
+  display: none;
 }

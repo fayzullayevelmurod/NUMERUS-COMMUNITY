@@ -1948,6 +1948,14 @@ nav {
 .personal-account__three {
   color: #fff;
 }
+.personal-account__three .title-label {
+  display: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.4300000072px;
+  margin: 15px 0;
+}
 .personal-account__three .servers-box {
   margin: 108px 0 0 60px;
   padding: 22px 41px 26px 24px;
@@ -2096,6 +2104,9 @@ nav {
 .personal-account__chart .statistiks-box .chart-img {
   width: 100%;
 }
+.personal-account__chart .statistiks-box .chart-img.media-chart {
+  display: none;
+}
 .personal-account__chart .statistiks-box .chart-title {
   font-size: 15.43px;
   font-weight: 600;
@@ -2140,6 +2151,10 @@ nav {
   border: 1px solid rgba(1, 144, 205, 0.2117647059);
   border-radius: 5.34px;
   cursor: pointer;
+}
+
+.personal-account__three .box-icon {
+  display: none;
 }
 
 .md-show,
@@ -2201,6 +2216,50 @@ nav {
     width: 100%;
     height: 50px;
   }
+  .personal-account__two .right-panel {
+    margin: 0;
+    padding: 20px;
+  }
+  .personal-account__two .info-project {
+    margin-left: 0;
+  }
+  .personal-account__two .info-project {
+    margin: 0 !important;
+  }
+  .personal-account__three .servers-box {
+    margin: 12px 20px;
+  }
+  .personal-account__three .title-label {
+    display: block;
+  }
+  .personal-account__three .box-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 43px;
+    max-width: 43px;
+    height: 45px;
+    background: #07223E;
+    border-radius: 12px;
+  }
+  .personal-account__three .servers-box .controller {
+    display: none;
+  }
+  .personal-account__three .content-box {
+    min-width: 195px;
+    width: calc(100% - 108px);
+  }
+  .personal-account__chart .statistiks-box {
+    margin: 20px;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    border: none;
+    max-width: 100%;
+  }
+  .personal-account__chart .statistiks-box .flex-box {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1350px) {
   .rankings-section .rihgt-img__box {
@@ -2225,6 +2284,27 @@ nav {
   }
   .intro .tabs::-webkit-scrollbar {
     display: none;
+  }
+  .personal-account__bg {
+    background-size: cover;
+    background-position: center top;
+  }
+  .personal-account__three .servers-box {
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    background: none;
+  }
+  .personal-account__three .servers-box .box {
+    background: rgba(10, 25, 48, 0.5019607843);
+    border: 1px solid rgba(1, 144, 205, 0.2117647059);
+    padding: 23px 16px;
+    border-radius: 12px;
+    flex: 1 1 auto;
+  }
+  .personal-account__three .servers-box .servers-boxes {
+    flex-wrap: wrap;
+    gap: 23px;
   }
 }
 @media screen and (max-width: 1250px) {
@@ -2469,6 +2549,9 @@ nav {
   }
   .server-information .bonus-cards {
     width: fit-content;
+  }
+  .personal-account__two .auth-box {
+    max-width: 375px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2778,7 +2861,7 @@ nav {
     display: none;
   }
   .personal-account__bg {
-    background: #040E1A;
+    background-position: center;
   }
   .personal-account {
     padding-bottom: 24px;
@@ -2795,6 +2878,118 @@ nav {
   }
   .personal-account .info-project .box.buy-box {
     box-shadow: none;
+  }
+  .personal-account__two .right-panel {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .personal-account__two .auth-box {
+    max-width: 100%;
+    box-shadow: none;
+    padding: 29px 28px 21px 24px;
+  }
+  .personal-account .info-project .box {
+    box-shadow: none;
+    padding: 16px 28px 19px 25px;
+  }
+  .personal-account__two .panels .links-box .link-box {
+    margin-left: 11px;
+  }
+  .personal-account__two .links-box span {
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 13px;
+  }
+  .personal-account__two .auth-box .auth-btn {
+    width: 100%;
+  }
+  .personal-account__two .auth-box p {
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .personal-account__three .added-btn {
+    margin: 21px auto 0 auto;
+    padding-left: 0;
+  }
+  .personal-account__three .added-btn span {
+    display: none;
+  }
+  .personal-account__three .added-btn img {
+    width: 33px;
+    height: 33px;
+  }
+  .personal-account__chart .statistiks-box .flex-box {
+    row-gap: 20px;
+    column-gap: 24px;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .personal-account__chart .statistiks-box .date-box .text {
+    display: none;
+  }
+  .personal-account__chart .statistiks-box .chart-box {
+    flex-direction: column;
+    margin: 15px 0 0 0;
+  }
+  .personal-account__chart .statistiks-box .date-box {
+    max-width: 100%;
+    width: 100%;
+  }
+  .personal-account__chart .statistiks-box .date-box .date {
+    max-width: 100%;
+    width: 100%;
+    font-size: 15px;
+    line-height: 21px;
+    height: 50px;
+    border: none;
+    gap: 19px;
+  }
+  .personal-account__chart .statistiks-box .chart-btn {
+    order: -1;
+    width: 100%;
+    background: var(--Block-style, rgba(10, 25, 48, 0.5019607843));
+    border: 1px solid var(--SRT, rgba(1, 144, 205, 0.2117647059));
+    height: 54px;
+    justify-content: start;
+    padding-left: 15px;
+  }
+  .personal-account__chart .statistiks-box .box {
+    height: 55px;
+  }
+  .personal-account__chart .statistiks-box .box img {
+    width: 26px;
+    height: 26px;
+  }
+  .personal-account__chart .statistiks-box .chart-title {
+    display: none;
+  }
+  .personal-account__chart .statistiks-box .chart-img {
+    display: none;
+  }
+  .personal-account__chart .statistiks-box .chart-img.media-chart {
+    display: block;
+    margin-top: -18px;
+  }
+  .personal-account__chart .statistiks-box .box .project-box {
+    width: 26px;
+    height: 26px;
+  }
+  .personal-account__chart .statistiks-box .box .project-box svg {
+    width: 15px;
+    height: 15px;
+  }
+  .personal-account__chart .statistiks-box .title {
+    font-size: 12px;
+    line-height: 20.57px;
+  }
+  .personal-account__chart .statistiks-box .info {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .personal-account__chart .statistiks-box .box.active {
+    background: linear-gradient(0deg, var(--Block-style, rgba(10, 25, 48, 0.5)), var(--Block-style, rgba(10, 25, 48, 0.5))), linear-gradient(0deg, #082247, #082247), linear-gradient(270deg, rgba(10, 45, 98, 0.3) 60.22%, #0D3B83 100%);
+    box-shadow: 0px 6.86px 13.71px -6.86px rgba(0, 0, 0, 0.1215686275);
+    border: 1px solid var(--SRT, rgba(1, 144, 205, 0.2117647059));
   }
 }
 @media screen and (max-width: 480px) {
