@@ -1,15 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* Core style */
 html {
   box-sizing: border-box;
 }
+
 ::-webkit-scrollbar {
   width: 4px;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #003687;
   border-radius: 2.99px;
 }
+
 ::-webkit-scrollbar-track {
   background: #092250;
   border-radius: 2.99px;
@@ -33,14 +37,17 @@ h6 {
   text-decoration: none;
   line-height: 1.2;
 }
+
 ul,
 ol {
   padding: 0;
   margin: 0;
 }
+
 li {
   list-style: none;
 }
+
 textarea:focus,
 select:focus {
   outline: none !important;
@@ -50,6 +57,7 @@ select:focus {
 
 button {
   border: none;
+  padding: 0;
   background: none;
 }
 
@@ -66,6 +74,7 @@ a:focus {
 .wrapper {
   overflow: hidden;
 }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -78,26 +87,31 @@ a:focus {
   .lang-flag {
     font-size: 24px;
   }
+
   .selected-lang {
     display: flex;
     align-items: center;
     gap: 6px;
     cursor: pointer;
+
     .arrow-down {
       transition: all 0.1s linear;
     }
+
     &.active {
       .arrow-down {
         transform: rotate(90deg);
       }
     }
   }
+
   .lang-name {
     font-size: 14px;
     font-weight: 700;
     line-height: 16.94px;
     color: #fff;
   }
+
   .option-language {
     position: absolute;
     top: 100%;
@@ -106,6 +120,7 @@ a:focus {
     display: none;
     user-select: none;
     cursor: pointer;
+
     &.show {
       display: block;
     }
@@ -117,10 +132,12 @@ a:focus {
 .tabs {
   display: flex;
   gap: 67px;
+
   .tab-item {
     width: 249px;
   }
 }
+
 .language-box .option-language.show {
   display: flex;
   align-items: center;

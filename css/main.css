@@ -56,6 +56,7 @@ select:focus {
 
 button {
   border: none;
+  padding: 0;
   background: none;
 }
 
@@ -1327,6 +1328,9 @@ nav {
 .personal-account {
   padding-bottom: 73px;
 }
+.personal-account .save-btn {
+  display: none;
+}
 .personal-account .left-panel {
   border-bottom-right-radius: 24px;
 }
@@ -1424,6 +1428,17 @@ nav {
   max-height: 187px;
   overflow-y: auto;
   padding-right: 14px;
+}
+.personal-account .info-project .rihgt-side .media-title {
+  display: none;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: #cdcfd1;
+}
+.personal-account .info-project .rihgt-side .close-btn {
+  display: none;
 }
 .personal-account .info-project .rihgt-side .flex-box {
   display: flex;
@@ -1601,7 +1616,7 @@ nav {
   letter-spacing: 0.1285714358px;
   text-align: center;
 }
-.panels .panel-boxes .panel-box {
+.panels .panel-box {
   padding: 12px 19px;
   border-radius: 8px;
   display: flex;
@@ -1610,24 +1625,24 @@ nav {
   gap: 1rem;
   cursor: pointer;
 }
-.panels .panel-boxes .panel-box .left-box {
+.panels .panel-box .left-box {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.panels .panel-boxes .panel-box .text {
+.panels .panel-box .text {
   font-size: 14px;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: -0.02em;
   color: #788597;
 }
-.panels .panel-boxes .panel-box.active {
+.panels .panel-box.active {
   background: linear-gradient(270deg, rgba(10, 45, 98, 0.3) 26.26%, #0A2D62 100%);
   border-left: 1px solid #004BBD;
   box-shadow: 0px 1px 3px 0px rgba(6, 7, 8, 0.0509803922), 0px 1px 2px -1px rgba(6, 7, 8, 0.0509803922), inset 0px 2px 9.4px 0px rgba(0, 72, 157, 0.6392156863);
 }
-.panels .panel-boxes .panel-box.active .text {
+.panels .panel-box.active .text {
   color: #fff;
 }
 .panels .panel-bottom {
@@ -1730,6 +1745,9 @@ nav {
   margin-left: -5px;
   height: 57px;
 }
+.panels .premium-box .premium-btn.media-block {
+  display: none;
+}
 .panels .premium-box .extend-btn {
   width: 222px;
 }
@@ -1742,6 +1760,9 @@ nav {
 .panels .premium-box .look-bg .look-img {
   width: 100%;
   height: 100%;
+}
+.panels .premium-box .look-bg .look-img.media-block {
+  display: none;
 }
 .panels .premium-box .block-btn {
   width: 73px;
@@ -2126,6 +2147,61 @@ nav {
   display: none !important;
 }
 
+.meida-block {
+  display: none;
+}
+
+.panels .media-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1620px) {
+  .personal-account .panels {
+    flex-direction: column;
+  }
+  .personal-account .right-panel {
+    max-width: 100%;
+  }
+  .personal-account .right-panel .rankings-section {
+    max-width: 100%;
+  }
+  .personal-account .info-project {
+    max-width: 100%;
+    margin-left: 74px;
+  }
+  .panels .left-panel {
+    position: fixed;
+    z-index: 100;
+    background: #041733;
+    left: -100%;
+    transition: all 0.2s linear;
+    height: 100vh;
+    overflow-y: auto;
+    border-radius: 0;
+  }
+  .panels .left-panel.show {
+    left: 0;
+  }
+  .panels .media-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 20px 0 20px;
+    gap: 16px;
+  }
+  .panels .media-menu .open-left__panel-btn {
+    height: 50px;
+    width: 53px;
+  }
+  .panels .media-menu .open-left__panel-btn img {
+    height: 100%;
+  }
+  .panels .media-menu .panel-box {
+    width: 100%;
+    height: 50px;
+  }
+}
 @media screen and (max-width: 1350px) {
   .rankings-section .rihgt-img__box {
     margin-left: -2px;
@@ -2157,11 +2233,38 @@ nav {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .personal-account .info-project {
+    margin: 24px 20px 0 20px;
+  }
+}
+@media screen and (max-width: 1115px) {
+  .personal-account .info-project {
+    flex-direction: column;
+  }
+  .personal-account .info-project > div {
+    max-width: 100%;
+    width: 100%;
+  }
+  .personal-account .info-project .rihgt-side {
+    max-width: 100%;
+  }
+  .personal-account .info-project .box.buy-box {
+    justify-content: space-between;
+  }
 }
 @media screen and (max-width: 992px) {
   .rankings-section .ranking-card__box {
     flex-direction: column;
     position: relative;
+  }
+  .rankings-section .rihgt-img__box.meida-block {
+    display: block;
+  }
+  .personal-account .rihgt-img__upload {
+    display: none;
+  }
+  .personal-account .right-panel .rankings-section {
+    margin: 61px 0 0 0;
   }
   .rankings-section .content-box {
     flex-direction: column;
@@ -2562,6 +2665,136 @@ nav {
   }
   .server-information .media-block__box-footer {
     display: flex;
+  }
+  .personal-account .info-project .box.buy-box {
+    flex-direction: column;
+    padding: 0;
+    background: transparent;
+    border: none;
+  }
+  .panels .premium-box .premium-box__top {
+    flex-wrap: wrap;
+    row-gap: 18px;
+    column-gap: 13px;
+  }
+  .personal-account .info-project .box {
+    box-shadow: 0px 1px 3px 0px rgba(6, 7, 8, 0.0509803922), 0px 1px 2px -1px rgba(6, 7, 8, 0.0509803922), inset 0px 2px 9.4px 0px rgba(0, 72, 157, 0.6392156863);
+  }
+  .panels .links-box {
+    padding-right: 20px;
+    gap: 20px;
+  }
+  .panels .premium-box .look-bg {
+    height: 323px;
+  }
+  .panels .premium-box .look-bg .look-img {
+    display: none;
+  }
+  .panels .premium-box .look-bg .look-img.meida-block {
+    display: block;
+  }
+  .panels .premium-box .extend-btn {
+    width: 100%;
+    background: rgba(1, 68, 167, 0.4588235294);
+    border: 2px solid #0043AA;
+    border-radius: 12px;
+  }
+  .panels .premium-box .look-bg {
+    margin-top: 14px;
+  }
+  .panels .buy-box .select-box {
+    max-width: 100%;
+  }
+  .personal-account .info-project .green-btn {
+    width: 100%;
+  }
+  .panels .premium-box .premium-btn {
+    width: 120px;
+    position: unset;
+    display: none;
+  }
+  .panels .premium-box .premium-btn.media-block {
+    display: flex;
+  }
+  .panels .premium-box .btn-box {
+    padding: 0 22px 0 14px;
+  }
+  .personal-account .info-project {
+    margin: 24px 12px 0 12px;
+    gap: 24px;
+  }
+  .personal-account .info-project .rihgt-side {
+    background: transparent;
+    border: none;
+    padding: 0;
+    gap: 20px;
+  }
+  .personal-account .info-project .rihgt-side .box {
+    padding: 10px 12px 10px 20px;
+  }
+  .personal-account .info-project .label {
+    color: #005ECC;
+    margin-bottom: 12px;
+    padding-bottom: 0;
+  }
+  .personal-account .info-project .title-box h5 {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .personal-account .info-project .title-box {
+    padding: 9px 24px;
+  }
+  .personal-account .info-project .rihgt-side .btns button {
+    min-width: 56px;
+  }
+  .personal-account .info-project .rihgt-side .box {
+    box-shadow: none;
+  }
+  .personal-account .info-project .rihgt-side .box .media-title {
+    display: block;
+  }
+  .personal-account .info-project .rihgt-side .flex-box img {
+    position: absolute;
+    top: 20px;
+    right: 61px;
+    width: 36px;
+    height: 43px;
+  }
+  .personal-account .info-project .rihgt-side .last-box {
+    position: relative;
+    padding-top: 23px;
+    padding: 23px 22px 32px 20px;
+  }
+  .personal-account .info-project .rihgt-side .flex-box p {
+    margin-top: 22px;
+  }
+  .personal-account .info-project .rihgt-side .close-btn {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
+  .personal-account .info-project .label.media-hide__label {
+    display: none;
+  }
+  .personal-account__bg {
+    background: #040E1A;
+  }
+  .personal-account {
+    padding-bottom: 24px;
+  }
+  .personal-account .save-btn {
+    width: 100%;
+    height: 60px;
+    display: flex;
+  }
+  .save-btn__box {
+    width: 100%;
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+  .personal-account .info-project .box.buy-box {
+    box-shadow: none;
   }
 }
 @media screen and (max-width: 480px) {

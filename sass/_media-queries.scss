@@ -2,56 +2,174 @@
 .lg-block {
   display: none !important;
 }
+
+.meida-block {
+  display: none;
+}
+
+.panels {
+  .media-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1620px) {
+  .personal-account {
+    .panels {
+      flex-direction: column;
+    }
+
+    .right-panel {
+      max-width: 100%;
+
+      .rankings-section {
+        max-width: 100%;
+      }
+    }
+
+    .info-project {
+      max-width: 100%;
+      margin-left: 74px;
+    }
+
+  }
+
+  .panels .left-panel {
+    position: fixed;
+    z-index: 100;
+    background: #041733;
+    left: -100%;
+    transition: all .2s linear;
+    height: 100vh;
+    overflow-y: auto;
+    border-radius: 0;
+
+    &.show {
+      left: 0;
+    }
+  }
+
+  .panels {
+    .media-menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 20px 20px 0 20px;
+      gap: 16px;
+
+      .open-left__panel-btn {
+        height: 50px;
+        width: 53px;
+
+        img {
+          height: 100%;
+        }
+      }
+
+      .panel-box {
+        width: 100%;
+        height: 50px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1350px) {
   .rankings-section .rihgt-img__box {
     margin-left: -2px;
+
     img {
       border: inherit;
       width: 100%;
       object-fit: cover;
     }
   }
+
   .partners {
     overflow-x: auto;
+
     &::-webkit-scrollbar {
       display: none;
     }
   }
+
   .intro {
     .tabs {
       overflow-x: auto;
       margin-right: -16px;
       margin-left: -16px;
       gap: 30px;
+
       &::-webkit-scrollbar {
         display: none;
       }
     }
   }
 }
+
 @media screen and (max-width: 1250px) {
   .container {
     max-width: 100%;
     padding-left: 16px;
     padding-right: 16px;
   }
+
+  .personal-account .info-project {
+    margin: 24px 20px 0 20px;
+  }
 }
+
+@media screen and (max-width: 1115px) {
+  .personal-account .info-project {
+    flex-direction: column;
+
+    &>div {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  .personal-account .info-project .rihgt-side {
+    max-width: 100%;
+  }
+
+  .personal-account .info-project .box.buy-box {
+    justify-content: space-between;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .rankings-section .ranking-card__box {
     flex-direction: column;
     position: relative;
   }
+
+  .rankings-section .rihgt-img__box.meida-block {
+    display: block;
+  }
+
+  .personal-account .rihgt-img__upload {
+    display: none;
+  }
+
+  .personal-account .right-panel .rankings-section {
+    margin: 61px 0 0 0;
+  }
+
   .rankings-section .content-box {
     flex-direction: column;
     gap: 0;
     border-radius: 12px;
   }
+
   .rankings-section .rihgt-img__box {
     margin-left: 0;
     order: -1;
     max-width: 100%;
     height: auto;
   }
+
   .rankings-section .leavel-number {
     position: absolute;
     top: -25px;
@@ -59,104 +177,105 @@
     transform: translateX(-50%);
     z-index: 1;
   }
+
   .rankings-section .rihgt-img__box::before {
     top: unset;
     bottom: -1px;
     height: 175px;
   }
+
   .rankings-section .social-media {
     position: absolute;
     bottom: 27px;
     right: 38px;
     height: fit-content;
   }
+
   .rankings-section .rankings-cards {
     gap: 36px;
   }
+
   body {
     background: #040e1a;
   }
+
   .rankings-section .ranking-card__box.green .rihgt-img__box::before {
-    background: linear-gradient(
-      360deg,
-      #33691e 6.29%,
-      rgba(3, 20, 45, 0) 24.57%
-    );
+    background: linear-gradient(360deg,
+        #33691e 6.29%,
+        rgba(3, 20, 45, 0) 24.57%);
   }
+
   .rankings-section .ranking-card__box .ranking-card {
     padding: 24px 18px 24px 18px;
   }
+
   .rankings-section .ranking-card__box.blue .rihgt-img__box::before {
-    background: linear-gradient(
-      360deg,
-      #0288d1 6.29%,
-      rgba(3, 20, 45, 0) 24.57%
-    );
+    background: linear-gradient(360deg,
+        #0288d1 6.29%,
+        rgba(3, 20, 45, 0) 24.57%);
   }
+
   .rankings-section .ranking-card__box.purple .rihgt-img__box::before {
-    background: linear-gradient(
-      360deg,
-      #311b92 6.29%,
-      rgba(3, 20, 45, 0) 24.57%
-    );
+    background: linear-gradient(360deg,
+        #311b92 6.29%,
+        rgba(3, 20, 45, 0) 24.57%);
   }
+
   .rankings-section .ranking-card__box.red .rihgt-img__box::before {
-    background: linear-gradient(
-      360deg,
-      #b3051a 6.29%,
-      rgba(3, 20, 45, 0) 24.57%
-    );
+    background: linear-gradient(360deg,
+        #b3051a 6.29%,
+        rgba(3, 20, 45, 0) 24.57%);
   }
+
   .rankings-section .ranking-card__box.orange .rihgt-img__box::before {
-    background: linear-gradient(
-      360deg,
-      #d4380d 6.29%,
-      rgba(3, 20, 45, 0) 24.57%
-    );
+    background: linear-gradient(360deg,
+        #d4380d 6.29%,
+        rgba(3, 20, 45, 0) 24.57%);
   }
+
   .rankings-section .ranking-card__box.yellow .rihgt-img__box::before {
-    background: linear-gradient(
-      360deg,
-      #fac714 6.29%,
-      rgba(3, 20, 45, 0) 24.57%
-    );
+    background: linear-gradient(360deg,
+        #fac714 6.29%,
+        rgba(3, 20, 45, 0) 24.57%);
   }
+
   .rankings-section .ranking-card__box.gray .rihgt-img__box::before {
-    background: linear-gradient(
-      360deg,
-      #424242 6.29%,
-      rgba(3, 20, 45, 0) 24.57%
-    );
+    background: linear-gradient(360deg,
+        #424242 6.29%,
+        rgba(3, 20, 45, 0) 24.57%);
   }
+
   .rankings-section .ranking-card__box.black .rihgt-img__box::before {
-    background: linear-gradient(
-      360deg,
-      #262626 6.29%,
-      rgba(3, 20, 45, 0) 24.57%
-    );
+    background: linear-gradient(360deg,
+        #262626 6.29%,
+        rgba(3, 20, 45, 0) 24.57%);
   }
+
   .rankings-section .ranking-card__box.light .rihgt-img__box::before {
-    background: linear-gradient(
-      360deg,
-      #ffffff 6.29%,
-      rgba(3, 20, 45, 0) 24.57%
-    );
+    background: linear-gradient(360deg,
+        #ffffff 6.29%,
+        rgba(3, 20, 45, 0) 24.57%);
   }
+
   .intro {
     background-size: cover;
     background-position: center;
   }
+
   .page-two {
     .rankings-section .day-box {
       margin-left: 20px;
       margin-top: 0;
     }
+
     .ranking-card .ratings {
       grid-template-columns: auto auto;
     }
-    .ratings > .rating-box {
+
+    .ratings>.rating-box {
       order: unset !important;
     }
+
     .rankings-section .social-media {
       position: initial;
       flex-direction: row;
@@ -165,138 +284,172 @@
       margin-top: 21px;
       width: 100% !important;
     }
+
     .ranking-card .info-box {
       max-width: 100%;
     }
   }
+
   .rankings-section .rihgt-img__box::before {
-    background: linear-gradient(
-      360deg,
-      #011133 6.29%,
-      rgba(3, 20, 45, 0) 24.57%
-    );
+    background: linear-gradient(360deg,
+        #011133 6.29%,
+        rgba(3, 20, 45, 0) 24.57%);
   }
+
   .lg-block {
     display: flex !important;
   }
+
   .lg-hide {
     display: none !important;
   }
+
   .social-media .lg-hide {
     display: none !important;
   }
+
   .intro {
     border-radius: 0 0 32px 32px !important;
   }
+
   .server-information .game-world .container {
     flex-direction: column;
   }
+
   .server-information .game-world .left-box {
     max-width: 100%;
     display: flex;
     flex-direction: column;
   }
+
   .server-information {
     .project-description {
       order: -1;
     }
   }
+
   .server-information .project-description .scroll-box {
     padding-right: 10px;
   }
+
   .server-information {
     .game-world {
-      .left-box > .game-world__label {
+      .left-box>.game-world__label {
         display: none;
       }
+
       .bonus-box {
         display: none;
       }
     }
   }
+
   .server-information .reviews-box .user-name__box .left-box {
     display: flex;
     flex-direction: row !important;
   }
+
   .server-information .reviews-box .comment-box .box {
     align-items: start;
-    & > img {
+
+    &>img {
       margin-top: 18px;
     }
   }
+
   .server-information .reviews-box .comments-parent {
     gap: 22px;
   }
+
   .server-information .bonus-box.md-block {
     display: flex;
 
-    & > .bonus-card {
+    &>.bonus-card {
       display: none;
     }
   }
+
   .server-information .bonus-cards {
     display: flex;
   }
+
   .server-information .ranking-card {
     flex-direction: column;
     gap: 24px;
   }
+
   .server-information .ranking-card .ratings {
     display: grid;
     grid-template-columns: auto auto;
   }
+
   .server-information {
     .rankings-section .social-media {
       bottom: 101px !important;
       right: 6px;
     }
   }
+
   .rankings-section .social-media {
     margin: 0;
   }
+
   .rankings-section .rankings-cards {
     gap: 30px !important;
   }
+
   .server-information .fire-btn {
     display: none;
   }
+
   .server-information {
     border-radius: 12px;
+
     .content-box {
       overflow: hidden;
     }
   }
+
   .server-information .ranking-card .info-box {
     gap: 12px;
   }
+
   .server-information .ranking-card .desc {
     margin-bottom: 0;
   }
+
   .server-information .diamond-img {
     display: none;
   }
+
   .server-information .user-name {
     span {
       display: none;
     }
   }
+
   .server-information .reviews-box .recommendation span {
     margin-top: 0;
   }
+
   .server-information .reviews-box .user-name__box {
     margin-bottom: 12px;
   }
+
   .server-information .reviews-box .recommendation img {
     margin-top: -4px;
   }
+
   .server-information .reviews-box .comments-parent {
     &::-webkit-scrollbar {
       display: none;
     }
   }
+
   .rankings-section .content-box {
     height: unset;
   }
+
   .server-information .bonus-cards {
     width: fit-content;
   }
@@ -305,10 +458,12 @@
 @media screen and (max-width: 768px) {
   nav {
     padding: 8px 0;
+
     .nav-logo {
       display: none;
     }
   }
+
   .intro {
     height: fit-content;
     padding-bottom: 23px;
@@ -322,20 +477,24 @@
       padding: 0 69px;
     }
   }
+
   .intro .right-box {
     width: 100%;
     justify-content: space-between;
   }
+
   .intro .community-logo {
     width: 302px;
     height: 225px;
     margin: 12px auto 27px auto;
   }
+
   .primary-btn {
     height: 44px;
     border-radius: 12px;
     white-space: nowrap;
   }
+
   .btn,
   .frozen-btn {
     padding: 0 9px;
@@ -345,54 +504,62 @@
     gap: 6px;
     border-radius: 8px;
   }
+
   .intro .btn {
     img {
       width: 16px;
     }
   }
+
   .intro .btns {
     gap: 10px;
   }
+
   .intro .right-box {
     gap: 0;
   }
+
   .language-box .selected-lang {
     gap: 5px;
   }
+
   .language-box .lang-name {
     font-size: 11.76px;
   }
+
   .language-box .arrow-down {
     width: 20px;
     height: 18px;
   }
+
   .primary-btn:hover,
   .primary-btn.active {
     color: #ffffff;
     background: linear-gradient(0deg, #002367, #002367),
-      radial-gradient(
-        96.34% 67.76% at 50% 100.73%,
+      radial-gradient(96.34% 67.76% at 50% 100.73%,
         rgba(0, 194, 255, 0.3) 31.5%,
-        rgba(0, 0, 0, 0) 100%
-      );
+        rgba(0, 0, 0, 0) 100%);
   }
+
   .rankings-section {
     padding-top: 51px;
   }
+
   .rankings-section .rihgt-img__box::before {
-    background: linear-gradient(
-      360deg,
-      #011133 6.29%,
-      rgba(3, 20, 45, 0) 24.57%
-    );
+    background: linear-gradient(360deg,
+        #011133 6.29%,
+        rgba(3, 20, 45, 0) 24.57%);
   }
+
   .rankings-section .ranking-card__box .ranking-card {
     flex-direction: column;
     gap: 24px;
   }
-  .rankings-section .ranking-card .bonus-box > .bonus-card {
+
+  .rankings-section .ranking-card .bonus-box>.bonus-card {
     display: none;
   }
+
   .rankings-section .social-media {
     bottom: 130px;
     gap: 14px;
@@ -400,9 +567,11 @@
     flex-direction: row;
     width: 78px;
   }
+
   .rankings-section .ranking-card .desc {
     margin: 12px 0;
   }
+
   .rankings-section .ranking-card__box .ranking-card {
     padding-top: 8px;
 
@@ -410,13 +579,16 @@
       padding-top: 42px;
     }
   }
+
   .seo {
     padding: 32px 0 44px 0;
   }
+
   .footer-navigation {
     padding: 0 16px 21px 16px;
     flex-wrap: wrap;
     justify-content: space-between;
+
     .btn,
     .frozen-btn,
     .button-group {
@@ -427,59 +599,73 @@
       // color: ;
     }
   }
+
   .md-hide {
     display: none;
   }
+
   .md-show {
     display: flex !important;
   }
+
   .footer-navigation {
     gap: 24px !important;
   }
+
   .footer {
     background: #040e1a;
     padding: 24px 0;
   }
+
   .footer .container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 12px;
   }
+
   .footer .container span {
     order: 1;
     color: #03476f;
   }
+
   .footer .social-media {
     display: none;
   }
+
   .footer .footer-logo {
     path {
       fill: #068ddd8c;
     }
   }
+
   .intro .btns {
     .btn {
       &:last-child {
         padding: 0 7px;
         gap: 2px;
       }
+
       &:nth-child(2) {
         padding: 0 8px 0 10px;
         gap: 4px;
       }
     }
   }
+
   .tabs .tab-item {
     width: 202px;
   }
+
   .rankings-section .day-box__flex {
     gap: 12px;
   }
+
   .server-information .project-description .description-box {
     height: 388px;
     padding: 16px 10px 20px 12px;
   }
+
   .server-information .reviews-box .btns {
     button:nth-child(2) {
       span {
@@ -487,12 +673,15 @@
       }
     }
   }
+
   .server-information .achievements {
     justify-content: space-between;
   }
+
   .server-information .game-world .container {
     gap: 35px;
   }
+
   .server-information .achievements .star-box {
     img {
       width: 10px;
@@ -500,31 +689,206 @@
       margin-left: -5px;
     }
   }
+
   .server-information .achievements .box {
     width: 50px;
     height: 50px;
     padding: 9px;
+
     img {
       width: 100%;
     }
   }
+
   .server-information .achievements .box:last-child {
     display: none;
   }
+
   .server-information {
     .seo {
       padding-top: 28px;
     }
   }
+
   .seo {
     padding-left: 25px;
     padding-right: 25px;
   }
+
   .footer {
     background: transparent;
   }
+
   .server-information .media-block__box-footer {
     display: flex;
+  }
+
+  .personal-account .info-project .box.buy-box {
+    flex-direction: column;
+    padding: 0;
+    background: transparent;
+    border: none;
+  }
+
+  .panels .premium-box .premium-box__top {
+    flex-wrap: wrap;
+    row-gap: 18px;
+    column-gap: 13px;
+  }
+
+  .personal-account .info-project .box {
+    box-shadow: 0px 1px 3px 0px #0607080D,
+      0px 1px 2px -1px #0607080D,
+      inset 0px 2px 9.4px 0px #00489DA3;
+  }
+
+  .panels .links-box {
+    padding-right: 20px;
+    gap: 20px;
+  }
+
+  .panels .premium-box .look-bg {
+    height: 323px;
+  }
+
+  .panels .premium-box .look-bg .look-img {
+    display: none;
+
+    &.meida-block {
+      display: block;
+    }
+  }
+
+  .panels .premium-box .extend-btn {
+    width: 100%;
+    background: #0144A775;
+    border: 2px solid #0043AA;
+    border-radius: 12px;
+  }
+
+  .panels .premium-box .look-bg {
+    margin-top: 14px;
+  }
+
+  .panels .buy-box .select-box {
+    max-width: 100%;
+  }
+
+  .personal-account .info-project .green-btn {
+    width: 100%;
+  }
+
+  .panels .premium-box .premium-btn {
+    width: 120px;
+    position: unset;
+    display: none;
+
+    &.media-block {
+      display: flex;
+      // width: 120px;
+    }
+  }
+
+  .panels .premium-box .btn-box {
+    padding: 0 22px 0 14px;
+  }
+
+  .personal-account .info-project {
+    margin: 24px 12px 0 12px;
+    gap: 24px;
+  }
+
+  .personal-account .info-project .rihgt-side {
+    background: transparent;
+    border: none;
+    padding: 0;
+    gap: 20px;
+  }
+
+  .personal-account .info-project .rihgt-side .box {
+    padding: 10px 12px 10px 20px;
+  }
+
+  .personal-account .info-project .label {
+    color: #005ECC;
+    margin-bottom: 12px;
+    padding-bottom: 0;
+  }
+
+  .personal-account .info-project .title-box h5 {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .personal-account .info-project .title-box {
+    padding: 9px 24px;
+  }
+
+  .personal-account .info-project .rihgt-side .btns button {
+    min-width: 56px;
+  }
+
+  .personal-account .info-project .rihgt-side .box {
+    box-shadow: none;
+  }
+
+  .personal-account .info-project .rihgt-side .box .media-title {
+    display: block;
+  }
+
+  .personal-account .info-project .rihgt-side .flex-box img {
+    position: absolute;
+    top: 20px;
+    right: 61px;
+    width: 36px;
+    height: 43px;
+  }
+
+  .personal-account .info-project .rihgt-side .last-box {
+    position: relative;
+    padding-top: 23px;
+    padding: 23px 22px 32px 20px;
+  }
+
+  .personal-account .info-project .rihgt-side .flex-box p {
+    margin-top: 22px;
+  }
+
+  .personal-account .info-project .rihgt-side .close-btn {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
+
+  .personal-account .info-project .label {
+    &.media-hide__label {
+      display: none;
+    }
+  }
+
+  .personal-account__bg {
+    background: #040E1A;
+  }
+
+  .personal-account {
+    padding-bottom: 24px;
+
+    .save-btn {
+      width: 100%;
+      height: 60px;
+      display: flex;
+    }
+  }
+
+  .save-btn__box {
+    width: 100%;
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+
+  .personal-account .info-project .box.buy-box {
+    box-shadow: none;
   }
 }
 
@@ -532,6 +896,7 @@
   .rankings-section .rihgt-img__box img {
     height: 175px;
   }
+
   .intro {
     background: url(../images/media-intro-bg.png) no-repeat !important;
     background-size: cover !important;
