@@ -2161,6 +2161,32 @@ nav {
   max-width: 1189px;
   margin: 112px 0 0 60px;
 }
+.personal-account__four .media-block {
+  display: none;
+}
+.personal-account__four .date-box {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--Block-style, rgba(10, 25, 48, 0.5019607843));
+  box-shadow: 9.09px 4.55px 18.19px 0px rgba(0, 0, 0, 0.0784313725), inset 0px 0px 9.09px 0px #0454A6;
+  border: 1px solid var(--Block-style-line, #003687);
+  height: 60px;
+  padding: 0 21px 0 16px;
+  border-radius: 12px;
+  display: none;
+}
+.personal-account__four .date-box .box {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.personal-account__four .date-box span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  color: #FFF;
+}
 .personal-account__four .filter-box {
   display: flex;
   align-items: center;
@@ -2762,6 +2788,10 @@ nav {
     border: 1px solid #0A5BCF;
     box-shadow: 9.09px 4.55px 18.19px 0px rgba(0, 0, 0, 0.0784313725), inset 0px 0px 9.09px 0px #0454A6;
   }
+  .personal-account__four .right-panel {
+    margin: 0;
+    padding: 20px;
+  }
 }
 @media screen and (max-width: 1350px) {
   .rankings-section .rihgt-img__box {
@@ -3054,6 +3084,54 @@ nav {
   }
   .personal-account__two .auth-box {
     max-width: 375px;
+  }
+  .personal-account__four .table-container {
+    overflow-x: auto;
+    padding-bottom: 13px;
+  }
+  .personal-account__four .table-container::-webkit-scrollbar {
+    height: 4px;
+  }
+  .personal-account__four .table-container table,
+  .personal-account__four .table-container .pagination {
+    min-width: 920px;
+  }
+  .personal-account__four .filter-box {
+    order: 1;
+  }
+  .personal-account__four .filter-box .filter-btns {
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 9.09px 4.55px 18.19px 0px rgba(0, 0, 0, 0.0784313725), inset 0px 0px 9.09px 0px #0454A6;
+  }
+  .personal-account__four .filter-box .filter-btn,
+  .personal-account__four .filter-box .search-box,
+  .personal-account__four .filter-box .primary-btn__two {
+    display: none;
+  }
+  .personal-account__four .filter-box .select-box {
+    padding: 0 9px 0 14px;
+    gap: 10px;
+  }
+  .personal-account__four .filter-box .clear-filter span {
+    display: none;
+  }
+  .personal-account__four .filter-box .select-box:first-child {
+    border-left: none;
+  }
+  .personal-account__four .table-container {
+    margin-right: -20px;
+  }
+  .personal-account__four .filter-box .select-box {
+    border-left: none;
+    border-right: 1px solid #003687;
+  }
+  .personal-account__four .clear-filter {
+    border-left: none;
+  }
+  .personal-account__four .pagination {
+    justify-content: start;
+    padding-left: 20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -3521,6 +3599,65 @@ nav {
     background: #011A44;
     box-shadow: none;
     border: none;
+  }
+  .personal-account__four .table-box {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  .personal-account__four .date-box,
+  .personal-account__four .primary-btn__two {
+    display: flex;
+    order: 1;
+    margin-top: -6px;
+  }
+  .personal-account__four .primary-btn__two {
+    width: 100%;
+    height: 70px;
+    background: #162379;
+  }
+  .personal-account__bg {
+    background-size: unset;
+  }
+  .personal-account__four .media-block {
+    display: block;
+  }
+  .personal-account__four .media-hide {
+    display: none;
+  }
+  .personal-account__four .pagination .btns {
+    order: -1;
+    gap: 14px;
+  }
+  .personal-account__four .pagination span {
+    font-size: 12px;
+    line-height: 19.48px;
+  }
+  .personal-account__four .pagination {
+    background: #003389;
+  }
+  .personal-account__four .table-container .user-id {
+    color: #05A5D8;
+  }
+  .personal-account__four .table-container .user-name,
+  .personal-account__four .table-container .user-id,
+  .personal-account__four .table-container td,
+  .personal-account__four .table-container thead th {
+    font-size: 11px;
+    line-height: 16.22px;
+  }
+  .personal-account__four .table-container thead {
+    background: #003389;
+  }
+  .personal-account__four .table-container thead th:first-child {
+    text-align: center;
+  }
+  .personal-account__four .table-container .status-button {
+    font-size: 10px;
+    line-height: 14.6px;
+  }
+  .personal-account__four .table-container table {
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 480px) {

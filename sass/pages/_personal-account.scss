@@ -994,6 +994,37 @@
     margin: 112px 0 0 60px;
   }
 
+  .media-block {
+    display: none;
+  }
+
+  .date-box {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--Block-style, #0A193080);
+    box-shadow: 9.09px 4.55px 18.19px 0px #00000014,
+      inset 0px 0px 9.09px 0px #0454A6;
+    border: 1px solid var(--Block-style-line, #003687);
+    height: 60px;
+    padding: 0 21px 0 16px;
+    border-radius: 12px;
+    display: none;
+
+    .box {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22.4px;
+      color: #FFF;
+    }
+  }
+
   .filter-box {
     display: flex;
     align-items: center;
