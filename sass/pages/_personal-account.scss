@@ -1483,6 +1483,18 @@
     }
   }
 
+  .pending {
+    color: #E26F20;
+  }
+
+  .rejected {
+    color: #D0302F;
+  }
+
+  .verified {
+    color: #4AC97E;
+  }
+
   .admin-ansver {
     padding-top: 12px;
     align-items: center;
@@ -1509,18 +1521,6 @@
       display: flex;
       align-items: center;
       gap: 8px;
-
-      .pending {
-        color: #E26F20;
-      }
-
-      .rejected {
-        color: #D0302F;
-      }
-
-      .verified {
-        color: #4AC97E;
-      }
 
       span {
         font-size: 12px;
@@ -1921,5 +1921,43 @@
     .btns {
       gap: 14px;
     }
+  }
+}
+
+
+// reviews-modernation
+.reviews-modernation {
+  .verified-box {
+    display: flex;
+  }
+
+  .hide-admin__ansver {
+    display: none !important;
+  }
+
+  .server-information .reviews-box .comment-box::before {
+    display: none;
+  }
+
+  .info-top__box .right-box {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    height: 24px;
+
+    img {
+      height: 100%;
+      width: 24px;
+    }
+  }
+
+  .server-information .reviews-box .comment-box {
+    background: #011A44;
+    box-shadow: none;
+    border: none;
+  }
+
+  .comment-box.no-recommendation {
+    border: 2px solid #841C1B !important;
   }
 }

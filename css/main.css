@@ -2565,6 +2565,15 @@ nav {
   letter-spacing: 0.150000006px;
   color: #fff;
 }
+.personal-account__five .pending {
+  color: #E26F20;
+}
+.personal-account__five .rejected {
+  color: #D0302F;
+}
+.personal-account__five .verified {
+  color: #4AC97E;
+}
 .personal-account__five .admin-ansver {
   padding-top: 12px;
   align-items: center;
@@ -2588,15 +2597,6 @@ nav {
   display: flex;
   align-items: center;
   gap: 8px;
-}
-.personal-account__five .admin-ansver .left-box .pending {
-  color: #E26F20;
-}
-.personal-account__five .admin-ansver .left-box .rejected {
-  color: #D0302F;
-}
-.personal-account__five .admin-ansver .left-box .verified {
-  color: #4AC97E;
 }
 .personal-account__five .admin-ansver .left-box span {
   font-size: 12px;
@@ -2898,6 +2898,34 @@ nav {
 }
 .personal-account__payment .pagination .btns {
   gap: 14px;
+}
+
+.reviews-modernation .verified-box {
+  display: flex;
+}
+.reviews-modernation .hide-admin__ansver {
+  display: none !important;
+}
+.reviews-modernation .server-information .reviews-box .comment-box::before {
+  display: none;
+}
+.reviews-modernation .info-top__box .right-box {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  height: 24px;
+}
+.reviews-modernation .info-top__box .right-box img {
+  height: 100%;
+  width: 24px;
+}
+.reviews-modernation .server-information .reviews-box .comment-box {
+  background: #011A44;
+  box-shadow: none;
+  border: none;
+}
+.reviews-modernation .comment-box.no-recommendation {
+  border: 2px solid #841C1B !important;
 }
 
 .md-show,
