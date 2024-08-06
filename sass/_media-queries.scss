@@ -1064,7 +1064,7 @@
   }
 
   .personal-account__bg {
-    background-position: center;
+    background-position: center top;
   }
 
   .personal-account {
@@ -1291,6 +1291,11 @@
 
   .personal-account__bg {
     background-size: unset;
+
+
+    &.cover {
+      background-size: cover;
+    }
   }
 
   .personal-account__four {
@@ -1344,6 +1349,11 @@
 
   .personal-account__four .table-container table {
     margin-top: 0;
+  }
+
+  .personal-account__owner .title-box__two h5 {
+    font-size: 18px;
+    line-height: 32px;
   }
 }
 

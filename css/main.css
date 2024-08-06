@@ -2658,6 +2658,43 @@ nav {
   display: block;
 }
 
+.personal-account__owner .info-project .rihgt-side {
+  padding-bottom: 24px;
+}
+.personal-account__owner .info-project .title-box {
+  background: linear-gradient(270deg, rgba(10, 25, 48, 0.5) 0%, rgba(31, 78, 150, 0.5) 100%), linear-gradient(90deg, rgba(6, 121, 255, 0.6) 0%, rgba(8, 91, 183, 0) 100%);
+  border: 2px solid #1E56B2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.personal-account__owner .title-box__two {
+  padding: 5px 24px;
+  border-radius: 12px;
+  border: 0.75px solid var(--Sidebar-strokes, #1E56B2);
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.personal-account__owner .title-box__two h5 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+}
+.personal-account__owner .buy-box .select-box {
+  background: linear-gradient(90deg, rgba(42, 111, 174, 0) 0%, rgba(36, 143, 203, 0) 27%, rgba(42, 136, 189, 0.21) 65.5%, #197AD3 100%);
+  border: 2px solid rgba(0, 117, 255, 0.7215686275);
+  height: 50px;
+  border-radius: 12px;
+}
+.personal-account__owner .green-btn::before {
+  background: radial-gradient(123.7% 123.7% at 50% 23.3%, rgba(0, 134, 255, 0) 36.86%, rgba(1, 205, 252, 0.487085) 70.93%, rgba(1, 251, 251, 0.8) 100%), radial-gradient(53% 53% at 50% 106%, rgba(1, 251, 251, 0.8) 9.77%, rgba(1, 205, 252, 0) 74.08%, rgba(0, 134, 255, 0) 100%), linear-gradient(0deg, rgba(1, 124, 167, 0.25), rgba(1, 124, 167, 0.25)), linear-gradient(90deg, rgba(6, 121, 255, 0.6) 0%, rgba(8, 91, 183, 0) 100%);
+}
+.personal-account__owner .green-btn::after {
+  background: linear-gradient(182.75deg, rgba(189, 0, 255, 0) -15.61%, #FFFFFF 97.7%), linear-gradient(0deg, #1FD7FF, #1FD7FF), linear-gradient(90deg, #00FFE0 6%, rgba(150, 244, 156, 0) 59%);
+}
+
 .md-show,
 .lg-block {
   display: none !important;
@@ -3441,7 +3478,7 @@ nav {
     display: none;
   }
   .personal-account__bg {
-    background-position: center;
+    background-position: center top;
   }
   .personal-account {
     padding-bottom: 24px;
@@ -3619,6 +3656,9 @@ nav {
   .personal-account__bg {
     background-size: unset;
   }
+  .personal-account__bg.cover {
+    background-size: cover;
+  }
   .personal-account__four .media-block {
     display: block;
   }
@@ -3658,6 +3698,10 @@ nav {
   }
   .personal-account__four .table-container table {
     margin-top: 0;
+  }
+  .personal-account__owner .title-box__two h5 {
+    font-size: 18px;
+    line-height: 32px;
   }
 }
 @media screen and (max-width: 480px) {
