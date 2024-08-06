@@ -2157,6 +2157,250 @@ nav {
   display: none;
 }
 
+.personal-account__four .right-panel {
+  max-width: 1189px;
+  margin: 112px 0 0 60px;
+}
+.personal-account__four .filter-box {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.personal-account__four .filter-box .primary-btn__two {
+  background: #003389;
+  height: 45px;
+  width: 189px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.personal-account__four .filter-btns {
+  display: flex;
+  align-items: center;
+  background: rgba(10, 25, 48, 0.5019607843);
+  border: 1px solid var(--Block-style-line, #003687);
+  height: 59px;
+  border-radius: 12px;
+}
+.personal-account__four .filter-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  padding: 0 14px;
+}
+.personal-account__four .select-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 19px;
+  border-left: 1px solid #003687;
+  height: inherit;
+  padding: 0 20px;
+  cursor: pointer;
+}
+.personal-account__four .select-box span {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.personal-account__four .clear-filter {
+  border-left: 1px solid #003687;
+  height: inherit;
+  padding: 0 26px 0 19px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.personal-account__four .clear-filter span {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #51ADF0;
+}
+.personal-account__four .search-box {
+  background: #F4F2FF;
+  height: 33px;
+  width: 340px;
+  border-radius: 6px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 13px 0 11px;
+  gap: 10px;
+}
+.personal-account__four .search-box .search-img {
+  width: 20px;
+  height: 20px;
+}
+.personal-account__four .search-box input {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  background: transparent;
+  color: #6E6893;
+  width: 100%;
+  height: inherit;
+  border: none;
+  outline: none;
+}
+.personal-account__four .search-box input::placeholder {
+  color: #6E6893;
+}
+.personal-account__four .table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+  margin-top: 10px;
+}
+.personal-account__four .table-container thead {
+  color: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #022557;
+}
+.personal-account__four .table-container thead th {
+  padding: 11px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+.personal-account__four .table-container thead th .flex-box {
+  text-align: center;
+  justify-content: center;
+}
+.personal-account__four .table-container thead th:first-child {
+  border-radius: 24px 0 0 0;
+  width: 204px;
+}
+.personal-account__four .table-container thead th:nth-child(2) {
+  width: 126px;
+}
+.personal-account__four .table-container thead th:last-child {
+  border-radius: 0 24px 0 0;
+  width: 121px;
+}
+.personal-account__four .table-container thead th:first-child {
+  text-align: left;
+}
+.personal-account__four .table-container thead .flex-box {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.personal-account__four .table-container tbody {
+  background: rgba(10, 25, 48, 0.5019607843);
+}
+.personal-account__four .table-container tbody tr {
+  border-top: 1px solid #1871df;
+  transition: all 0.2s linear;
+}
+.personal-account__four .table-container tbody tr:first-child {
+  border-color: #233764;
+}
+.personal-account__four .table-container tbody tr:hover {
+  background: #072659;
+}
+.personal-account__four .table-container td {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  padding: 12px 24px;
+}
+.personal-account__four .table-container td:first-child {
+  text-align: left;
+  width: 204px;
+}
+.personal-account__four .table-container td:nth-child(2) {
+  width: 126px;
+}
+.personal-account__four .table-container td:last-child {
+  width: 121px;
+}
+.personal-account__four .table-container .flex-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.personal-account__four .table-container .user-name {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.personal-account__four .table-container .user-id {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #6C7275;
+}
+.personal-account__four .table-container .avatar-img {
+  width: 48px;
+  height: 48px;
+}
+.personal-account__four .table-container .status-button {
+  padding: 2px 6px;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.0509803922);
+  width: fit-content;
+  margin: 0 auto;
+}
+.personal-account__four .table-container .status-button.status-subscriber {
+  background: #5161F0;
+}
+.personal-account__four .table-container .status-button.status-done {
+  background: #089E17;
+}
+.personal-account__four .table-container .actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-left: 16px;
+}
+.personal-account__four .table-container .actions button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.personal-account__four .pagination {
+  display: flex;
+  align-items: center;
+  background: #022557;
+  border-radius: 0px 0px 12px 12px;
+  height: 48px;
+  padding-right: 51px;
+  justify-content: end;
+  gap: 50px;
+}
+.personal-account__four .pagination .flex-box {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.personal-account__four .pagination .btns {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.personal-account__four .pagination span {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #51ADF0;
+  cursor: pointer;
+}
+
 .md-show,
 .lg-block {
   display: none !important;
