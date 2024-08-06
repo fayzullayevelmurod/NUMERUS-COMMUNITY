@@ -2401,6 +2401,237 @@ nav {
   cursor: pointer;
 }
 
+.personal-account__five .right-panel {
+  max-width: 100%;
+}
+.personal-account__five .header-panel {
+  background: #071228;
+  padding: 21px 80px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.personal-account__five .header-panel .reviews {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.personal-account__five .header-panel .btns {
+  display: flex;
+  gap: 6px;
+}
+.personal-account__five .header-panel .button {
+  border: 2px solid #353945;
+  border-radius: 50px;
+  width: 42px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.personal-account__five .server-information {
+  display: flex;
+  align-items: stretch;
+  gap: 40px;
+  margin: 25px 0 0 80px;
+  padding-right: 22px;
+  max-width: 1230px;
+  height: calc(100vh - 24px);
+  overflow-y: auto;
+}
+.personal-account__five .server-information .reviews-box {
+  flex: 1 1 580px;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: unset;
+  justify-content: space-between;
+}
+.personal-account__five .server-information .reviews-box .comment-box {
+  border: 2px solid var(--Block-style-line, #003687);
+  background: rgba(0, 32, 86, 0.5019607843);
+  box-shadow: 0px 2px 9.4px 0px rgba(0, 72, 157, 0.6392156863) inset;
+}
+.personal-account__five .server-information .reviews-box .comment-box::before {
+  background: url(../../images/icons/rounded-line-2.svg) no-repeat;
+  left: -2px;
+  bottom: -33px;
+}
+.personal-account__five .server-information .reviews-box .hide-admin__ansver {
+  margin-bottom: 0;
+  z-index: 2;
+  position: relative;
+}
+.personal-account__five .server-information .reviews-box .box {
+  padding: 16px 16px 12px 10px;
+}
+.personal-account__five .server-information .reviews-box .recommendation span {
+  margin-top: 0;
+}
+.personal-account__five .server-information .reviews-box .recommendation {
+  align-items: start;
+  margin-top: 3px;
+}
+.personal-account__five .server-information .avatar-img {
+  margin-top: 12px;
+}
+.personal-account__five .server-information .media-block__box-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 24px;
+}
+.personal-account__five .server-information .comment-box .scroll-box {
+  height: 100px;
+  padding-right: 20px;
+}
+.personal-account__five .server-information .info-top__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 9px;
+  height: 24px;
+}
+.personal-account__five .server-information .total-like {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 34px;
+}
+.personal-account__five .server-information .total-like img {
+  height: 20px;
+}
+.personal-account__five .server-information .like-count {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.36px;
+  color: #fff;
+}
+.personal-account__five .server-information .answer-btn {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 5px 8px;
+  border-radius: 12px;
+  background: #004EDA;
+  border: 1px solid #FFFFFF;
+  color: #fff;
+  display: none;
+}
+.personal-account__five .warning-box {
+  margin-left: auto;
+}
+.personal-account__five .verified-box {
+  display: none;
+  align-items: center;
+  gap: 10px;
+}
+.personal-account__five .verified-box .verified-text {
+  color: #4AC97E;
+}
+.personal-account__five .verified-box p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.150000006px;
+  color: #fff;
+}
+.personal-account__five .admin-ansver {
+  padding-top: 12px;
+  align-items: center;
+  padding-left: 24px;
+}
+.personal-account__five .admin-ansver .top-box {
+  padding: 0;
+}
+.personal-account__five .admin-ansver .admin-comment__box {
+  border-radius: 12px 12px 12px 0px;
+  overflow: hidden;
+}
+.personal-account__five .admin-ansver .comment-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #00122F;
+  padding: 5px 17px;
+}
+.personal-account__five .admin-ansver .left-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.personal-account__five .admin-ansver .left-box .pending {
+  color: #E26F20;
+}
+.personal-account__five .admin-ansver .left-box .rejected {
+  color: #D0302F;
+}
+.personal-account__five .admin-ansver .left-box .verified {
+  color: #4AC97E;
+}
+.personal-account__five .admin-ansver .left-box span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.150000006px;
+}
+.personal-account__five .admin-ansver .comment {
+  border-radius: 0;
+  padding: 13px 15px 17px 21px;
+}
+.personal-account__five .admin-ansver .admin-avatar {
+  margin-top: 0;
+}
+.personal-account__five .hidden {
+  display: none !important;
+}
+.personal-account__five .show {
+  display: block !important;
+}
+.personal-account__five .edit-review {
+  background: #001941;
+  padding: 14px 8px 7px 8px;
+  border-radius: 12px 12px 12px 0px;
+  display: none;
+}
+.personal-account__five .edit-review textarea {
+  width: 100%;
+  border: 2px solid #0d5ddb;
+  background: rgba(255, 255, 255, 0.8980392157);
+  min-height: 48px;
+  border-radius: 12px;
+  padding: 7px;
+  resize: vertical;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+}
+.personal-account__five .edit-review textarea::-webkit-scrollbar-thumb {
+  background: #9da1b1;
+}
+.personal-account__five .edit-review textarea::-webkit-scrollbar-track {
+  background: #d9dce3;
+}
+.personal-account__five .edit-review textarea::placeholder {
+  color: #a7a9ab;
+}
+.personal-account__five .edit-review .publish-btn {
+  padding: 2px 8px;
+  background: #004EDA;
+  border-radius: 12px;
+  margin-top: 13px;
+  color: #fff;
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 27px;
+  display: block;
+}
+
 .md-show,
 .lg-block {
   display: none !important;
@@ -2503,6 +2734,33 @@ nav {
   }
   .personal-account__chart .statistiks-box .flex-box {
     width: 100%;
+  }
+  .personal-account__five .server-information {
+    padding: 24px 8px;
+    margin: 0;
+    max-width: 100%;
+    height: 100%;
+    gap: 24px;
+  }
+  .personal-account__five .server-information .reviews-box .comments {
+    padding-right: 0;
+  }
+  .personal-account__five .header-panel {
+    margin-top: 24px;
+    background: transparent;
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: start;
+    gap: 11px;
+  }
+  .personal-account__five .header-panel .btns .btn {
+    height: 37px;
+    border-radius: 50px;
+    width: 168px;
+    justify-content: center;
+    background: linear-gradient(139.69deg, rgba(248, 251, 255, 0.04) 0%, rgba(255, 255, 255, 0) 110.25%);
+    border: 1px solid #0A5BCF;
+    box-shadow: 9.09px 4.55px 18.19px 0px rgba(0, 0, 0, 0.0784313725), inset 0px 0px 9.09px 0px #0454A6;
   }
 }
 @media screen and (max-width: 1350px) {
@@ -3234,6 +3492,35 @@ nav {
     background: linear-gradient(0deg, var(--Block-style, rgba(10, 25, 48, 0.5)), var(--Block-style, rgba(10, 25, 48, 0.5))), linear-gradient(0deg, #082247, #082247), linear-gradient(270deg, rgba(10, 45, 98, 0.3) 60.22%, #0D3B83 100%);
     box-shadow: 0px 6.86px 13.71px -6.86px rgba(0, 0, 0, 0.1215686275);
     border: 1px solid var(--SRT, rgba(1, 144, 205, 0.2117647059));
+  }
+  .personal-account__five .server-information {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  .personal-account__five {
+    padding-bottom: 20px;
+  }
+  .personal-account__five .verified-box {
+    display: flex;
+  }
+  .personal-account__five .server-information .answer-btn {
+    display: block;
+  }
+  .personal-account__five .reviews-box .user-name__box {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .personal-account__five .diamond-img {
+    display: block;
+  }
+  .personal-account__five .server-information .reviews-box .recommendation {
+    margin-top: 0;
+    align-items: center;
+  }
+  .personal-account__five .server-information .reviews-box .comment-box {
+    background: #011A44;
+    box-shadow: none;
+    border: none;
   }
 }
 @media screen and (max-width: 480px) {

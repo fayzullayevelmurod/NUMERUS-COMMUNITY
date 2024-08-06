@@ -101,4 +101,53 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   } catch (error) {}
+
+  // Barcha .admin-ansver elementlarini olamiz
+  const adminAnswers = document.querySelectorAll('.admin-ansver');
+
+  adminAnswers.forEach((adminAnswer) => {
+    // Har bir .admin-ansver ichidan kerakli elementlarni olamiz
+    const editButton = adminAnswer.querySelector('.edit-review__btn');
+    const adminCommentBox = adminAnswer.querySelector('.admin-comment__box');
+    const commentDate = adminAnswer.querySelector('.comment-date');
+    const editReview = adminAnswer.querySelector('.edit-review');
+    const textArea = editReview.querySelector('textarea');
+    const publishButton = editReview.querySelector('.publish-btn');
+    const commentDesc = adminCommentBox.querySelector('.desc');
+
+    // Edit tugmasiga hodisa qo'shamiz
+    editButton.addEventListener('click', () => {
+      // hidden classini qo'shamiz
+      adminCommentBox.classList.add('hidden');
+      commentDate.classList.add('hidden');
+
+      // show classini qo'shamiz
+      editReview.classList.add('show');
+    });
+
+    // Publish tugmasiga hodisa qo'shamiz
+    publishButton.addEventListener('click', () => {
+      // Textarea bo'sh bo'lsa, focus qilish
+      if (textArea.value.trim() === '') {
+        textArea.focus();
+      } else {
+        // Textarea qiymatini desc ga o'rnatish
+        commentDesc.textContent = textArea.value;
+
+        // Hozirgi sanani formatda olish
+        const today = new Date();
+        const formattedDate = today.toLocaleDateString('ru-RU');
+
+        // Comment date ni yangilash
+        commentDate.textContent = formattedDate;
+
+        // show classini olib tashlash
+        editReview.classList.remove('show');
+
+        // hidden classini olib tashlash
+        adminCommentBox.classList.remove('hidden');
+        commentDate.classList.remove('hidden');
+      }
+    });
+  });
 });
