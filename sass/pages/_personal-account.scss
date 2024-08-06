@@ -1847,3 +1847,79 @@
     }
   }
 }
+
+
+// personal-account__payment
+.personal-account__payment {
+  .right-panel {
+    max-width: 1285px;
+  }
+
+  .table-container td:nth-child(2),
+  .table-container thead th:nth-child(2) {
+    width: 217px;
+  }
+
+  .table-container td:nth-child(3),
+  .table-container thead th:nth-child(3) {
+    width: 106px;
+  }
+
+  .table-container td:nth-child(5),
+  .table-container thead th:nth-child(5) {
+    width: 149px;
+  }
+
+  .table-container td:last-child,
+  .table-container thead th:last-child {
+    width: 250px;
+  }
+
+  .table-container td:first-child,
+  .table-container thead th:first-child {
+    padding-left: 52px;
+    white-space: nowrap;
+  }
+
+  .table-container thead th,
+  .table-container td {
+    text-align: left;
+  }
+
+  .payment-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .payment-img {
+      padding: 0 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 32px;
+      background: #fff;
+      border: 1px solid #F2F4F7;
+      border-radius: 4px;
+    }
+
+    .pay-name,
+    .pay-date {
+      display: block;
+      white-space: nowrap;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -0.01em;
+    }
+  }
+
+  .pagination {
+    justify-content: start;
+    padding-left: 52px;
+
+    .btns {
+      gap: 14px;
+    }
+  }
+}

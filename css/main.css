@@ -2839,6 +2839,67 @@ nav {
   height: 18px;
 }
 
+.personal-account__payment .right-panel {
+  max-width: 1285px;
+}
+.personal-account__payment .table-container td:nth-child(2),
+.personal-account__payment .table-container thead th:nth-child(2) {
+  width: 217px;
+}
+.personal-account__payment .table-container td:nth-child(3),
+.personal-account__payment .table-container thead th:nth-child(3) {
+  width: 106px;
+}
+.personal-account__payment .table-container td:nth-child(5),
+.personal-account__payment .table-container thead th:nth-child(5) {
+  width: 149px;
+}
+.personal-account__payment .table-container td:last-child,
+.personal-account__payment .table-container thead th:last-child {
+  width: 250px;
+}
+.personal-account__payment .table-container td:first-child,
+.personal-account__payment .table-container thead th:first-child {
+  padding-left: 52px;
+  white-space: nowrap;
+}
+.personal-account__payment .table-container thead th,
+.personal-account__payment .table-container td {
+  text-align: left;
+}
+.personal-account__payment .payment-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.personal-account__payment .payment-box .payment-img {
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 32px;
+  background: #fff;
+  border: 1px solid #F2F4F7;
+  border-radius: 4px;
+}
+.personal-account__payment .payment-box .pay-name,
+.personal-account__payment .payment-box .pay-date {
+  display: block;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+}
+.personal-account__payment .pagination {
+  justify-content: start;
+  padding-left: 52px;
+}
+.personal-account__payment .pagination .btns {
+  gap: 14px;
+}
+
 .md-show,
 .lg-block {
   display: none !important;
@@ -3327,6 +3388,13 @@ nav {
     justify-content: start;
     padding-left: 20px;
   }
+  .personal-account__payment .table-container thead th:last-child,
+  .personal-account__payment .table-container td:last-child {
+    width: fit-content;
+  }
+  .personal-account__four .table-container .pagination {
+    gap: 18px;
+  }
   .personal-account__search .search-side {
     grid-template-columns: auto;
   }
@@ -3347,6 +3415,18 @@ nav {
   }
   .personal-account__search .social-media {
     padding-top: 4px;
+  }
+  .personal-account__search .search-box {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .personal-account__search .search-box > img {
+    width: 32px;
+    height: 32px;
+  }
+  .personal-account__search .search-box .input-box {
+    order: -1;
   }
 }
 @media screen and (max-width: 768px) {
@@ -3880,6 +3960,9 @@ nav {
   .personal-account__owner .title-box__two h5 {
     font-size: 18px;
     line-height: 32px;
+  }
+  .personal-account__four .table-container tbody tr:last-child {
+    border-bottom: 1px solid #1871df;
   }
 }
 @media screen and (max-width: 480px) {

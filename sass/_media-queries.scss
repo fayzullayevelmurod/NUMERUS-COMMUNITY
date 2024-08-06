@@ -667,6 +667,15 @@
     padding-left: 20px;
   }
 
+  .personal-account__payment .table-container thead th:last-child,
+  .personal-account__payment .table-container td:last-child {
+    width: fit-content;
+  }
+
+  .personal-account__four .table-container .pagination {
+    gap: 18px;
+  }
+
   .personal-account__search .search-side {
     grid-template-columns: auto;
   }
@@ -692,6 +701,21 @@
 
   .personal-account__search .social-media {
     padding-top: 4px;
+  }
+
+  .personal-account__search .search-box {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+
+    &>img {
+      width: 32px;
+      height: 32px;
+    }
+
+    .input-box {
+      order: -1;
+    }
   }
 }
 
@@ -1399,6 +1423,12 @@
   .personal-account__owner .title-box__two h5 {
     font-size: 18px;
     line-height: 32px;
+  }
+
+  .personal-account__four .table-container tbody tr {
+    &:last-child {
+      border-bottom: 1px solid #1871df;
+    }
   }
 }
 
