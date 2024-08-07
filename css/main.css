@@ -3046,6 +3046,50 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
 }
 
+.owener-answer .server-information {
+  margin: 20px 0 0 74px;
+}
+.owener-answer .media-block__box-footer .date {
+  border: none;
+}
+.owener-answer .reviews-box .comment-box::before {
+  display: block !important;
+  background: url(../../images/icons/rounded-line.svg) no-repeat !important;
+  left: 0 !important;
+  bottom: -29px !important;
+}
+.owener-answer .server-information .reviews-box .hide-admin__ansver {
+  display: flex !important;
+}
+.owener-answer .admin-ansver {
+  padding: 10px 12px 25px 10px;
+  border-radius: 12px 12px 12px 0px;
+  margin-top: 13px;
+  background: rgba(1, 26, 68, 0.3490196078);
+}
+.owener-answer .comment-header .right-box {
+  display: flex;
+  gap: 12px;
+}
+.owener-answer .hide-admin__ansver.ml-none {
+  margin-left: 0;
+}
+.owener-answer .hide-admin__ansver.mt-none {
+  margin-top: 0;
+}
+.owener-answer .ml-12 {
+  margin-left: 12px;
+}
+.owener-answer .warning-text {
+  color: #E26F20 !important;
+}
+.owener-answer .succes-text {
+  color: #4AC97E;
+}
+.owener-answer .error-text {
+  color: #D0302F;
+}
+
 .md-show,
 .lg-block {
   display: none !important;

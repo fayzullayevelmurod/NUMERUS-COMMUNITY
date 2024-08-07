@@ -2104,3 +2104,63 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+// owener-answer
+.owener-answer {
+  .server-information {
+    margin: 20px 0 0 74px;
+  }
+
+  .media-block__box-footer .date {
+    border: none;
+  }
+
+  .reviews-box .comment-box::before {
+    display: block !important;
+    background: url(../../images/icons/rounded-line.svg) no-repeat !important;
+    left: 0 !important;
+    bottom: -29px !important;
+  }
+
+  .server-information .reviews-box .hide-admin__ansver {
+    display: flex !important;
+  }
+
+  .admin-ansver {
+    padding: 10px 12px 25px 10px;
+    border-radius: 12px 12px 12px 0px;
+    margin-top: 13px;
+    background: #011A4459;
+  }
+
+  .comment-header {
+    .right-box {
+      display: flex;
+      gap: 12px;
+    }
+  }
+
+  .hide-admin__ansver.ml-none {
+    margin-left: 0;
+  }
+
+  .hide-admin__ansver.mt-none {
+    margin-top: 0;
+  }
+
+  .ml-12 {
+    margin-left: 12px;
+  }
+
+  .warning-text {
+    color: #E26F20 !important;
+  }
+
+  .succes-text {
+    color: #4AC97E;
+  }
+
+  .error-text {
+    color: #D0302F;
+  }
+}
