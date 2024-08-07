@@ -186,7 +186,10 @@
 
   .personal-account__search .right-panel {
     padding-right: 20px;
+  }
 
+  .owener-settings .right-panel {
+    margin: 39px 12px 0 12px;
   }
 }
 
@@ -1429,6 +1432,10 @@
     &:last-child {
       border-bottom: 1px solid #1871df;
     }
+  }
+
+  .reviews-modernation .media-block__header {
+    display: block;
   }
 }
 
